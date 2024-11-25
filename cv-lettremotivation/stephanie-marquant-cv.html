@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bien que cela soit correct, assure-toi que la balise <meta name="viewport"> est aussi présente et bien formée, ce qui est déjà fait. -->
+
+  <title>CV Stéphanie Marquant- Développeur Front End en formation en recherche de Stage </title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./style-mediaqueries.css" />
+  <style>
+ 
+    /* Importation des polices depuis Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  </style>
+</head>
+<body>
+ 
+  <header>
+    <div class="flexDirectionColonne">
+      <div class="smallScreen infosEtNav flexDirectionLigne">
+
+        <span class="iconeLarge versFooter">
+          <a
+                id="adresse"
+                href="https://www.google.com/maps?q=17+rue+du+Druguet,+7540+Rumillies" target="_blank"
+                  class="blanc-bleu "><svg class="iconeLarge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+          </a
+              >
+        </span>
+        <span>
+          <a id="telephone"  href="tel:+32497296965"
+                class="blanc-bleu versFooter iconeLarge" ><svg class="iconeLarge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+            </a>
+        </span>
+        <span>
+            <a href="mailto:stephaniemarquant87@gmail.com"  id="adresseMail"
+                class="blanc-bleu versFooter iconeLarge"> 
+              <svg class="iconeLarge"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256l0 32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32l0 80 0 32c0 17.7 14.3 32 32 32s32-14.3 32-32l0-32c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/></svg></a
+              >
+        </span>
+        <span id="sideBarSymbole">
+          <ul>
+            <div class="toggle-btn" id="toggle-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </ul>
+        </span>
+      </div>
+      <nav id="sideBar" class="content">
+        <ul>
+          <li ><button class="showAll accueil buttonExperiences" role="button" aria-label="Afficher la section accueil">Accueil</button></li>
+          <li><button class="hideModularArea2 showModularArea1" aria-label="Afficher la section points clés" >Points Clés</button></li>
+          <li><button class="hideModularArea1 showAllSectionsArea2" aria-label="Afficher la section profil et parcours">Profil et parcours</button></li>
+          <li><button class="hideModularArea1 showModularArea2 buttonAboutMe" aria-label="Afficher la section Qui suis-je?">Qui suis-je?</button></li>
+          <li><button class="hideModularArea1 showModularArea2 buttonCompetences" role="button" aria-label="Afficher la section compétences">Compétences</button></li>
+          <li> <button class="hideModularArea1 showModularArea2 buttonRealisations buttonRealisations" role="button" aria-label="Afficher la section réalisations">Réalisations</button></li>
+          <li > <button class="hideModularArea1 showModularArea2 buttonFormations" role="button" aria-label="Afficher la section formations"> Formations</button></li>
+          <li ><button class="hideModularArea1 showModularArea2 buttonExperiences" role="button" aria-label="Afficher la section expériences">Expériences</button></li>
+          <li><button class="hideModularArea1 hideModularArea2 contacts" aria-label="Afficher la section contacts" >Contacts</button></li>
+          <li><button class="hideModularArea1 hideModularArea2 telechargement" aria-label="Afficher la section téléchargement">Téléchargement</button></li>
+        </ul>
+      </nav>
+
+     
+            <!-- Menu mobile -->
+
+      <div
+          class="itemHeader"
+          id="content">
+          <h1 class="blanc-bleu fontSizeHeaderh1">Stéphanie Marquant</h1>
+
+          <h2 class="blanc-bleu fontSizeHeaderh2">Développeur web front-end</h2>
+          <h3 class="blanc-bleu fontSizeHeaderh3">En cours de formation</h3>
+      </div>
+        <!-- petit écran<1000 -->
+          <!-- Navigation mobile (petit écran) -->
+      
+        <!-- <nav class="positionAbsolute with-margin-right " id="navBarSpecialSmallScreen">
+          <ul class="flexDirectionLigne">
+            <li><button class="bleu-clair showModularArea1 showModularArea2" id="Accueil">Accueil</button></li>
+            <li>
+              <button class="bleu-clair hideModularArea2 showModularArea1" id="infoImportantes">
+                  Points Clés
+              </button>
+            </li>
+            <li>
+              <button class="bleu-clair hideModularArea1 showModularArea2" id="details">
+                  Profil et Parcours
+              </button>
+            </li>
+          </ul>
+        </nav> -->
+      </div>
+        <!-- normal screen >1000 -->
+      <div class="normalScreen infosEtNav hideScreen">
+        <div class="versFooter contact"id="contacts">
+          <ul class="flexDirectionColonne">
+            <li >
+            <a
+                  id="adresse"
+                  href="#contact"
+                  class="blanc-bleu "><svg class="icone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>&nbsp;&nbsp;17 rue du druguet 7540 Rumillies</a
+              >
+            </li>
+            <li>
+              <a id="telephoneComplet" href="#contact"
+                class="blanc-bleu" ><svg class="icone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>&nbsp;&nbsp;0497/29.69.65
+              </a>
+            </li>
+            <li>
+                <a href="#contact" id="adresseMailComplet"
+                class="blanc-bleu"> 
+                <svg class="icone"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256l0 32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32l0 80 0 32c0 17.7 14.3 32 32 32s32-14.3 32-32l0-32c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/></svg>&nbsp;&nbsp;stéphaniemarquant87@gmail.com</a
+                >
+            </li>
+          </ul>
+        </div>
+        <div class="flexDirectionColonne telechargement versFooter" id="aTelechargerComplet">
+          <ul>
+            <li><strong>CV - Format PDF</strong><a href="./assets/cvPDF/cv PDF Final.pdf" download="CV Stéphanie Marquant- Développeur Web Front End en formation"></a><svg class="icone decalage1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg></li>
+          </ul>
+        </div>
+          
+        <nav class="positionAbsolute with-margin-right " id="navBarHideScreen">
+          <ul class="flexDirectionLigne ">
+            <li>
+              <button class="bleu-clair showModularArea2 showAllSectionsArea2"id="">
+                Accueil
+              </button>
+            </li>
+              
+            <li>
+              <button class="bleu-clair buttonAboutMe" >
+                  Qui suis-je?
+              </button>
+            </li>
+            <li>
+              <button class="bleu-clair buttonCompetences" id="">
+                  Compétences
+              </button>
+            </li>
+            <li>
+              <button class="bleu-clair buttonRealisations" id="">
+                Réalisations
+                </button>
+            </li>
+            <li>
+              <button class="bleu-clair buttonFormations" id=""> 
+                Formations
+              </button>
+            </li>
+            <li>
+              <button class="bleu-clair buttonExperiences"id="">
+                Expériences
+              </button>
+            </li>
+       
+          </ul>
+        </nav>
+      </div>
+        <!-- Barre latérale -->
+
+        <!-- Titre principaux -->
+    </div>
+  </header>
+  <div class="partie2 displayBlock" >
+    <main id="main">
+      <div class="card forSmallScreen displayNone"id="modularAreaSmallScreen">
+        <h3 class="center  nuance5">En recherche de stage</h3>
+        <div class="paddingIdentite">
+        
+          <img
+          src="./assets/images/photoidentité.jpg"
+                  alt="photo de Stéphanie Marquant"
+                  id=""
+                  class="colonne centerImage identiteSmallScreen "
+          />
+          
+        </div>
+
+          <h3 class="center">
+            <a id="telephoneComplet" href="#contact"
+              class=" grisFonce textalignCenter" ><svg class="icone grisFonce" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>&nbsp&nbsp0497/29.69.65
+            </a>
+          </h3>
+          <h3 class="center">
+              <a href="#contact" id="adresseMailComplet"
+              class=" grisFonce center"> 
+              <svg class="icone"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256l0 32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32l0 80 0 32c0 17.7 14.3 32 32 32s32-14.3 32-32l0-32c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/></svg>&nbsp&nbspstéphaniemarquant87@gmail.com</a
+              >
+            </h3>
+      </div>
+    
+      <div class="cardContainerAside" id="modularArea1">
+          
+        <div class="card" id="idCard1">
+          <h2 class="nuance5 center">Points Clés</h2>
+          <ul class="flexDirectionColonne textAlignCenter justifyContentCenter alignItemCenter">
+            <li>Permis de conduire D
+            </li>
+            <li>Français</li>
+            <li>Anglais</li>
+          </ul>
+           
+              <!-- <div id="pointsCle" class="cardResume"> -->
+            <!-- <section class="section flexDirectionColonne gridItem2"> -->
+          <h3 class=" underline nuance4 center">En cours d'acquisition</h3>
+          <ul class="textAlignCenter justifyContentCenter alignItemCenter">
+            <li>HTML CSS Javascript</li>
+            <li>Php MYSQL</li>
+          </ul>
+            <!-- <section class="flexDirectionColonne gridItem3" id="formation"> -->
+          <h3 class="underline nuance4 center"> Formation </h3>
+          <ul class="textAlignCenter justifyContentCenter alignItemCenter">
+            <li>
+                    Formation développeur web front end (en cours)
+            </li>
+            <li>
+                    Ingénieur Industriel en Biochimie
+            </li>
+          </ul>
+            <!-- </section> -->
+            <!-- <section class="section flexDirectionColonne" id="experience"> -->
+          <h3 class="underline nuance4 center"> Expériences</h3>
+          <span id="experience"></span>
+          <ul class="textAlignCenter justifyContentCenter alignItemCenter">
+            <li>Quotation Engineer</li>
+            <li>Professeur de sciences</li>
+          </ul>
+            <!-- </section> -->
+            <!-- <section class="textSection flexDirectionColonne gridItem4"> -->
+          <h3 class="underline nuance4 center">Réalisations</h3>
+          <ul class="justifyContentCenter  textAlignCenter alignItemCenter">
+            <li> Développement de jeux vidéo simples via des tutoriels</li>   
+          </ul>
+            <!-- </section> -->
+        </div>
+  
+      </div>
+        
+       
+        
+      <div class="cardContainer2 scrollable modularArea2 card " id="modularArea2">
+            <!-- </div> -->
+        <h2 class="nuance5 center">Profil et parcours</h2>
+        <section
+                class=" sectionModulable visibleDeBase"
+                id="aboutMeSection"
+        >
+              
+            
+          <div class="flexDirectionColonne">
+            <h3 class="textorange nuance3 center">&#60; Qui suis-je? &#62;</h3>
+            <img
+              src="./assets/images/photoidentité.jpg"
+                      alt="photo de Stéphanie Marquant"
+                      id="imgIdentiteProfil"
+                      class="colonne centerImage identite" 
+              />
+            <p >
+  
+              Diplômée en ingénierie industrielle, j'ai découvert il y a plusieurs mois le développement en m'initiant à la conception de jeux vidéo avec GameMaker, grâce à divers tutoriels. Cette première expérience m'a permis d'explorer le domaine du développement et a éveillé en moi une véritable passion pour la programmation.
+            </p>
+            <p>Désireuse de me réorienter vers ce domaine, je me suis inscrite à une formation en développement web front-end pour maîtriser la création d'applications web interactives. J'apprécie particulièrement le côté créatif, intellectuel et diversifié de ce secteur, et je suis convaincue qu'il correspond à mes aspirations professionnelles.</p>
+                  
+            <p>
+                  Actuellement à la recherche d’un stage dans la région wallonne ou bruxelloise, je serais ravie de mettre en pratique mes compétences. Si l'opportunité de rejoindre votre équipe se présente, vous pouvez compter sur mon engagement et ma détermination.
+            </p>
+            <p><span class="textorange nuance3 center passion">Mes passions: </span>
+              <span class="passion weight300" >les jeux de sociétés, les énigmes logiques, le tennis</span></p>
+           
+          </div>
+        </section>
+            
+        <section class=" flexDirectionColonne sectionModulable" id="competencesSection">
+          <div class="flexDirectionColonne textSection " id="competenceTechnique">
+            <h3 class="center textorange nuance3">&#60; Compétences&#62;</h3>
+            <h4 class=" textorange nuance5"> Compétences Techniques</h4>
+            <div id="developpement-web">
+              <h5>Développement web</h5>
+              <ul>
+                <li>HTML, CSS, Javascript</li>
+                <li>Php et MYSQL: acquisition à venir</li>
+                </ul>
+            </div>
+      
+            <div id="outils-dev">
+              <h5>Outils de développement</h5>
+              <ul>
+                <li>
+                    Familiarité avec les fonctionnalités essentielles de Git,
+                    VSCode, Chrome DevTools.
+                </li>
+                </ul>
+              </div>
+            <div id="frame">
+              <h5>Frameworks et bibliothèques</h5>
+              <p>
+                      Développement de compétences en lien avec des technologie telles
+                      que Bootstrap, jQuery et React: prévu prochainement.
+              </p>
+            </div>
+          </div>
+          <div class=" flexDirectionColonne " id="competencePersonnelle">
+            <h4 class="textorange nuance5"> Compétences personnelles </h4>
+            <div class="image-container">
+              <img
+                      src="./assets/images/photocvclairfinal.png"
+                      
+                      alt="Mes atouts"
+                      class="image-style"
+                />
+              <div class="overlayLarge noir ">
+                <ul>
+                  <li class="textOverlay atout1">Analytique</li>
+                  <li class=" textOverlay atout2">Critique</li>
+                  <li class="textOverlay atout3">Créative</li>
+                  <li class="textOverlay atout4">Engagée</li>
+                  <li class="textOverlay atout5">Flexible</li>
+                  <li class="textOverlay atout6">Réceptive</li>
+                </ul>
+              </div>
+              <!-- <span class="textOverlay atout1">Analytique</span>
+              <span class=" textOverlay atout2">Critique</span>
+              <span class="textOverlay atout3">Créative</span>
+              <span class="textOverlay atout4">Engagée</span>
+              <span class="textOverlay atout5">Flexible</span>
+              <span class="textOverlay atout6">Réceptive</span>
+           -->
+            </div>
+          </div>
+        </section>
+        <section class="sectionModulable flexDirectionColonne realisation" id="realisationsSection">
+          <div
+                  class="textSection  flexDirectionColonne"
+                  id="texteRealisation"
+            >
+            <h3 class="textorange nuance3 center">&#60; Mes réalisations &#62;</h3>
+            <h4>Création d'un CV interactif one-page</h4>
+            <p>J'ai conçu une interface web one-page réactive sans recourir à des CMS, en mettant l'accent sur une expérience utilisateur fluide et cohérente sur tous les appareils. L'interface s'ajuste dynamiquement à la taille de l'écran et aux actions de l'utilisateur. J'ai utilisé JavaScript et CSS avancé pour assurer une navigation fluide et une réactivité optimale.</p>
+            <h5>Compétences clés :</h5>
+            <ul>
+              <li><strong>JavaScript</strong>: Manipulation du DOM, gestion des événements pour des interactions dynamiques (affichage/masquage de sections)</li>
+              <li><strong>CSS</strong>: Mise en page flexible ( clamp(), Flexbox,etc.), gestion des classes dynamiques et media queries</li>
+              <li><strong>Responsive Design</strong>: Adaptation de l'interface avec des techniques modernes pour une expérience fluide sur tous les écrans</li>
+            </ul>
+            <h4>Programmation de jeux vidéo</h4>
+            <p>
+              J’ai apprehendé la programmation de jeux video grâce a ces tutoriels : 
+              <ul>
+                <li>"Créer son shooter" de Maxime de Créer Son Jeu.fr RPG maker</li>
+                <li>"Little Town" de Game Maker</li>
+                <li>tutoriel Action RPG de Shaun Spalding</li>
+              </ul>
+            </p>
+            <p>
+              Au fil de ces expériences, j'ai enrichi ma compréhension de la logique de la programmation et de la syntaxe de GML, en concevant des mécaniques de jeu captivantes et des environnements interactifs et attrayants.
+            </p>
+            <p> Ces diverses expériences m'ont permis d'acquérir des bases solides en programmation et en conception, tout en stimulant ma créativité face aux défis techniques,
+            </p>
+          </div>
+          <div
+                  class=" flexDirectionColonne"
+                  id="imageRealisation"
+          >
+              
+          </div>
+        </section>
+        <section class="sectionModulable flexDirectionColonne formation" id="formationsSection">
+            
+          <h3 class="textorange nuance3 center">&#60; Formations &#62;</h3>
+          <p>
+                  Au cours de mes formations, j'ai renforcé mes compétences en pensée
+                  logique et en résolution de problèmes, en abordant des situations
+                  complexes et en trouvant des solutions efficaces. voir plus
+          </p>
+          <ul>
+            <li class="flexDirectionLigne">
+              <span class="noWordWrap">2024</span>
+              <div class="flexDirectionColonne">
+                <strong class="decalage1em">IFAPME, Tournai- Developpeur Front End</strong>
+                <ul class="decalage1em">
+                  <li class="puce">Languages de balisage et de style HTML CSS</li>
+                  <li class="puce">Javascript pour programmation en front end </li>
+                  <li class="puce">Programmation en bases de données et utilisation de MySQL</li>
+                </ul>
+              </div>
+              
+            </li>
+              <li class="lineHeight1 weight300">2017<span class="decalage1em weight300">IFAPME, Tournai- Accueillante d'enfants</span></li>
+              <li class="lineHeight1 weight300">2012 <span class="decalage1em weight300">FOREM, Mons- Conseiller en énergie</span> 
+              <!-- <ul>
+                <p>
+                  Sujets abordés: audit énergétique, comptabilité
+                    énergétique,énergies renouvelables
+                </p>
+              </ul> -->
+              </li>
+              <li class="lineHeight1">2011-2012<span class="decalage1em">Forem, Tournai- Anglais</span></li>
+             
+              <li class="lineHeight1 flexDirectionLigne"
+              >
+                <span class="noWordWrap">2005-2010</span>
+                <span class="decalage1em wordWrap">Haute Ecole Professionnelle Condorcet, Charleroi
+                    - Diplôme de Master en sciences de l’ingénieur industriel
+                    finalité biochimie</span></li>
+              <!-- <div>
+                <p>
+                    Sujets abordés: biochimie,chimie organique, mathématiques,
+                    thermodynamique,...
+                </p>
+              </div> -->
+              <li class="lineHeight1">
+                  2005&nbsp;&nbsp; Sainte Union, Tournai—CESS option sciences appliquées
+              </li>
+            </ul>
+          </section>
+          <hr />
+          <section
+                class="section sectionModulable flexDirectionColonne alignementDroit"
+                id="experiencesSection">
+            <h3 class="textorange nuance3 center experience">&#60; Expériences &#62;</h3>
+            <p>
+                  La diversité de mes expériences m'a permis de développer des
+                  compétences variées, notamment dans la réalisation de devis
+                  techniques, la gestion de budgets et l'organisation de tâches dans
+                  des délais impartis.
+            </p>
+   
+            <ul >
+              <li class="lineHeight1 flexDirectionLigne">
+                <span class="dates">2017</span>
+                <span class="decalage1em">Service d’accueil d’enfants, Leuze en Hainaut —
+                  Accueillante d’enfants</span> 
+              </li>
+              <li class="lineHeight1 flexDirectionLigne">
+                <span class="noWordWrap">2013-2016</span>
+                <ul>
+                  <li><span class="decalage1em">Péruwelz — Quotation Engineer</span></li></li>
+                  <li class=" puce wordWrap decalage1em">Manipulation de données excel et de tableaux excels</li>
+                  <li class="puce decalage1em">Programmation excel</li>
+                  <li class="puce wordWrap decalage1em">Estimation de coûts et réalisation de devis</li>
+                  </ul>
+                </ul>
+                
+  
+              <li class="lineHeight1 flexDirectionLigne">
+                <span class="noWordWrap">2011-2012</span>
+                <ul>
+                  <span class="wordWrap decalage1em">Divers écoles de Tournai — divers intérims dans le
+                      milieu de l’enseignement</span>
+                  <li class="puce decalage1em">Capacité à vulgariser</li>
+                  <li class="puce decalage1em">Gestion du temps</li>
+                  <li class="puce decalage1em">Organisation de la matière</li>
+                </ul>
+                  
+              </li>
+
+              <li class="lineHeight1">2010&nbsp;&nbsp; Galactic, Escanaffles — Stagiaire</li>
+              <li class="lineHeight1">2008&nbsp;&nbsp; Biohainaut, Mons — Stagiaire</li>
+            </ul>
+          </section>
+          <hr />
+        </div>
+      </div>
+    </main>
+  </div>
+    
+    
+  <footer id="footer"class="card ">
+    <h2 class="nuance5 center">Contacts et documents</h2>
+    <div id="footerContent">
+      <div class="flexDirectionColonne marginLeft" id="footerContact ">
+        <h3 class="nuance4 center">Contactez-moi</h3>
+        <ul>
+          <li><a href="https://www.google.com/maps?q=17+rue+du+druguet+7540+Rumillies" >17 rue du druguet 7540 Rumillies</a></li>
+          <li><a href="tel:+32497296965" >0497/29.69.65</a></li>
+          <li><a href="mailto:stephaniemarquant87@gmail.com" >stéphaniemarquant87@gmail.com</a></li>
+        </ul>
+      </div>
+       
+      <div class="flexDirectionColonne marginRight" id="footerTelechargement">
+        <h3 class="nuance4 center">Document à télécharger </h3>
+        <ul class="">
+          <li class="flexDirectionLigne justifyContentCenter"><strong>CV - Format PDF</strong><a href="./assets/cvPDF/cv PDF Final.pdf"  download="CV Stéphanie Marquant- Développeur Web Front End en formation"><svg class="icone noir decalage1em  center"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg></a></li>
+          </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="fichier.js"></script>  
+</body> 
+</html>

@@ -1,0 +1,172 @@
+@media screen and (max-width: 1000px) {
+  #navBar {
+    display: none;
+  }
+  main {
+    gap: 2vh;
+  }
+
+  #contact.smallscreen {
+    display: block;
+    height: 50px;
+  }
+  .smallScreen.infosEtNav {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .toggle-btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 3px;
+    position: relative;
+    cursor: pointer;
+    height: 30px;
+    width: 40px;
+    z-index: 200;
+  }
+  .toggle-btn span {
+    width: 40px;
+    height: 8px;
+    border-radius: 5px;
+    background: white;
+    display: block;
+    transition: 0.3s ease;
+  }
+  /* #span1{
+
+  }
+  #span2{
+
+  }
+  #span3{
+
+  } */
+
+  .toggle-btn.active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    top: 0;
+  }
+  .toggle-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .toggle-btn.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+  }
+  .toggle-btn.active ~ .content {
+    opacity: 0.3;
+  }
+
+  .content {
+    transition: opacity 0.3s ease;
+    padding: 2px;
+    background-color: #f0f0f0;
+  }
+  #navBarSpecialSmallScreen {
+    display: block;
+  }
+  #sideBarSymbole ul {
+    padding-inline-start: 0px;
+  }
+
+  #sideBar {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: -150px;
+    width: 150px;
+    height: auto;
+    background-color: rgba(26, 44, 86, 0.7);
+    transition: right 0.7s ease, backdrop-filter 0.7s ease,
+      background-color 0.7s ease;
+  }
+  #sideBar:not(.active) {
+    right: -150px; /* Déplace la barre latérale hors de l'écran */
+  }
+  #sideBar ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  #sideBar button {
+    border: none;
+    background-color: rgba(26, 44, 86, 0);
+  }
+  #sideBar.active ul li button {
+    /* Couleur du texte plus claire pour un meilleur contraste */
+    font-size: 0.8rem;
+    /* text-transform: uppercase; */
+    cursor: pointer;
+    padding: 1px 2px; /* Ajoute un peu de padding pour une meilleure ergonomie */
+    border-radius: 8px; /* Arrondir les coins */
+    transition: all 0.1s ease; /* Transition douce pour les effets */
+    text-transform: uppercase; /* Met en majuscules les éléments pour un look plus moderne */
+    padding: 5px 5px;
+  }
+  #sideBar li button:hover {
+    background: #fcfcfb; /* Fond clair lors du survol */
+    color: #1a2c56; /* Texte bleu foncé */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  #sideBar.active {
+    display: block;
+    right: 0px;
+    text-align: center;
+    z-index: 100;
+
+    /* Appliquer un effet de flou */
+    backdrop-filter: blur(10px); /* Ajuster le rayon du flou */
+
+    /* Appliquer une teinte bleue plus claire et semi-transparente */
+    background-color: rgba(
+      26,
+      44,
+      86,
+      0.7
+    ); /* Une couleur bleue plus claire avec 70% d'opacité */
+
+    /* Optionnel : pour des transitions douces */
+    transition: right 0.7s ease, backdrop-filter 0.7s ease,
+      background-color 0.7s ease;
+  }
+  .identiteSmallScreen {
+    width: 150px;
+    height: auto;
+
+    object-fit: cover;
+    border-radius: 40%;
+    transform: translate(-50%, 0%);
+  }
+
+  .infosEtNav.hideScreen {
+    display: none;
+  }
+  .smallScreen.infosEtNav .iconeLarge {
+    padding-top: 5px;
+    width: 30px;
+    height: auto;
+    fill: var(--color-gris-bleute);
+  }
+  #navBarSpecialSmallScreen {
+    display: block;
+  }
+  /* #additionalInfo {
+    display: none;
+  } */
+}
+@media screen and (max-width: 500px) {
+  #footerContent {
+    display: flex;
+    flex-direction: column;
+  }
+}

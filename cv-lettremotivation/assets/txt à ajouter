@@ -1,0 +1,2491 @@
+    <!-- <footer>
+      <address id="informationContact">
+
+      </address>
+      <section id="lienPortfolio">
+        <p> Ci dessous je vous met le lien vers l'ensemble de mes créations dont la plupart ne sont pas encore abouties, le but étant de comprendre et d'apprendre les différents éléments nécessaires à la construction d'un jeu vidéo et aux problématiques auxquelles on peut se heurter  et cela plus que de finaliser ces projets.En dessous j'ai également mis un lien vers les projets sound Design de ma soeur Anne Sophie Marquant qui pourrait peut être éventuellement vous intéresser si vous chercher quelqu'un de motivé à travailler avec vous sur des projets ayant de tel besoin </p>
+        <ul>
+          <li><a href="URL_DU_PROJET_STEPHANIE" id="lienversprojetstéphanie"></a></li>
+          <li><a href="URL_DU_PROJET_ANNESO" id="lienversProjetAS"></a></li>
+          
+        </ul>
+      </section>
+      <section id="remarkAboutCv ">
+        <div>
+          <p>
+            J'ai conçu ce site à l'aide de mes cours et de tutoriels adaptés trouvés sur internet: j'ai utilisé visualstudiocode avec des langages html pour créer le contenu, css pour le style, javascript pour l'animation.Dans la rubrique suivante j'ai listé toutes les ressources: images, logiciels, outils utilisés pour la réalisation de ce cv.L'élaboration de ce cv m'a permis de développeler mes capacités de structuration, de programmation surtout au niveau des fondus, de recherche de contenu, de jalonnement d'un projet et de me 
+          </p>
+            <!-- https://fromscratch.podia.com/view/courses/parcours-complet-mastering-front-end/1302593-javascript-2-6/3736753-cours-le-dom à 2h20 -->
+        </div>
+      
+        <div id="ressourcePourCréationSite ">
+          <ul>
+            <li>visualStudioCode</li>
+            <li>git:pour la gestion de version</li>
+            <li>figma pour la création de maquette</li>
+            <li>ressources musicales de Anne Sophie Marquant </li>
+              <!-- https://fromscratch.podia.com/view/courses/parcours-complet-mastering-front-end/1302593-javascript-2-6/3736753-cours-le-dom à 2h20 -->
+          </ul>
+        </div>
+      </section>
+    </footer> -->
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+aside {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 200px; /* Largeur fixe pour les aside */
+    float: left; /* Permet aux aside d'être alignés à gauche */
+}
+
+main {
+    margin-left: 220px; /* Espace pour les aside */
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    clear: both; /* Assure que le footer est en dessous des floats */
+}
+/* .submainSections {
+  margin: 5px 20px;
+}
+.submainSections h3 {
+  text-transform: uppercase;
+  /* espace entre lettres */
+  letter-spacing: 5px;
+  /* alignement du texte gauche/droite */
+  text-align: center;
+  /* taille de police */
+  font-size: 0.6 em;
+  /* niveau de gras */
+  font-weight: 700;
+  /* style :italique/oblique/normal */
+  font-style: italic;
+  /* type d'ombre */
+  text-shadow: -6px -6px 12px #854511;
+  /* couleur */
+  color: rgb(188, 112, 52);
+  /* soulignement */
+  text-decoration: underline;
+  /* la police mettre toujours une police de secours si on arrive pas à trouver la première police (une  */
+  font-family: "Oswald", sans-serif;
+
+  /* margin Espace à coté et sous l'élément */
+  margin: 50px 0px;
+}
+.submainSections ul {
+  margin: 5px 50px;
+  padding: 0px;
+  display: flex;
+  /* flex direction en une seule colonne flex-direction: column */
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* La propriété CSS justify-content définit la manière dont le navigateur répartit l'espace entre et autour des éléments de contenu le long de l' axe principal d'un conteneur flexible et de l' axe en ligne des conteneurs de grille et multicolonnes. */
+  justify-content: flex-start;
+}
+.submainSections li {
+  /* taille de police */
+  font-size: 1.5vw;
+  list-style: none;
+  min-height: 20px;
+  margin: 0px 10px;
+  text-align: left;
+}
+.submainSections a {
+  /* taille de police */
+  font-size: 1.5vw;
+  min-height: 20px;
+  margin: 0px 10px;
+  text-align: center;
+} */
+Oui, dans un CV dynamique créé pour être visualisé sur un écran d'ordinateur, tu peux tout à fait ajuster la disposition des éléments en fonction de la taille de l'écran ou des préférences des utilisateurs. Voici quelques méthodes pour y parvenir :
+
+CSS Flexbox ou Grid : Utilise des propriétés CSS comme Flexbox ou Grid pour organiser les sections. Cela te permettra de réorganiser facilement les éléments en fonction de l'espace disponible.
+
+Media Queries : Implémente des media queries dans ton CSS pour adapter la disposition en fonction de la taille de l'écran. Par exemple, tu pourrais afficher certaines sections de manière différente sur les écrans plus petits ou plus grands.
+
+JavaScript : Si tu souhaites un comportement plus interactif, tu peux utiliser JavaScript pour permettre aux utilisateurs de réorganiser les sections de ton CV en faisant glisser et en déposant les éléments.
+
+Navigation dynamique : Crée un système de navigation qui permet aux utilisateurs de cliquer pour accéder à différentes sections, mettant ainsi en avant celles qui sont les plus pertinentes pour eux.
+
+Design Responsive : Assure-toi que ton CV est conçu de manière responsive, ce qui signifie qu'il s'ajuste automatiquement en fonction de la taille de l'écran, offrant une bonne expérience utilisateur sur tous les appareils.
+
+Ces techniques peuvent rendre ton CV plus attrayant et faciliter la navigation, tout en mettant en
+
+
+calc(var(--header-height) - 100
+
+
+
+Ce code JavaScript ajuste dynamiquement les hauteurs de divers éléments d'une page web en fonction de la taille de la fenêtre et du contenu. Voici une explication détaillée :
+
+1. Écouteur d'événement DOMContentLoaded
+javascript
+Copier le code
+document.addEventListener("DOMContentLoaded", function () {
+Cet événement se déclenche lorsque le document HTML a été complètement chargé et analysé, ce qui signifie que le DOM est prêt à être manipulé. Le code à l'intérieur de cette fonction s'exécute une fois que le DOM est prêt.
+2. Sélection des éléments
+javascript
+Copier le code
+const mainContent = document.querySelector("main");
+const header = document.querySelector("header");
+mainContent et header récupèrent les éléments <main> et <header> du document, respectivement. Ces variables sont utilisées pour manipuler et ajuster leurs styles plus tard.
+3. Définition de la fonction updateHeights
+javascript
+Copier le code
+function updateHeights() {
+Cette fonction est responsable de la mise à jour des hauteurs des différents éléments en fonction de la taille de la fenêtre et du contenu.
+À l'intérieur de updateHeights :
+Calcul des hauteurs :
+javascript
+Copier le code
+const bodyHeight = document.body.offsetHeight;
+const headerHeight = header.offsetHeight;
+const viewportHeight = window.innerHeight;
+const contentHeight = document.body.scrollHeight;
+bodyHeight : Hauteur totale du corps du document.
+
+headerHeight : Hauteur de l'élément <header>.
+
+viewportHeight : Hauteur de la fenêtre (viewport) du navigateur.
+
+contentHeight : Hauteur totale du contenu du corps (ce qui inclut le contenu défilable).
+
+Définition des propriétés CSS :
+
+javascript
+Copier le code
+document.documentElement.style.setProperty(
+  "--content-height",
+  `${contentHeight}px`
+);
+document.documentElement.style.setProperty(
+  "--body-height",
+  `${bodyHeight}px`
+);
+document.documentElement.style.setProperty(
+  "--header-height",
+  `${headerHeight}px`
+);
+document.documentElement.style.setProperty(
+  "--main-height",
+  `${bodyHeight - headerHeight}px`
+);
+document.documentElement.style.setProperty(
+  "--viewport-height",
+  `${viewportHeight}px`
+);
+Ici, des variables CSS sont définies sur l'élément <html> (ou document.documentElement). Ces propriétés CSS personnalisées peuvent ensuite être utilisées dans les styles CSS de la page pour ajuster l'apparence des éléments.
+
+Ajustement de la hauteur de <main> :
+
+javascript
+Copier le code
+if (mainContent) {
+  mainContent.style.maxHeight = `${viewportHeight - headerHeight}px`;
+}
+La hauteur maximale de l'élément <main> est définie pour s'assurer qu'il ne dépasse pas l'espace disponible sous le <header>. Cela permet d'éviter un débordement et de maintenir un affichage propre.
+4. Appel initial et écouteur de redimensionnement
+javascript
+Copier le code
+updateHeights();
+window.addEventListener("resize", updateHeights);
+updateHeights() est appelée immédiatement après que le DOM soit chargé, pour s'assurer que tout est bien mis à jour dès le départ.
+Ensuite, un écouteur d'événements est ajouté pour surveiller les redimensionnements de la fenêtre. Chaque fois que la fenêtre est redimensionnée, la fonction updateHeights est appelée à nouveau, garantissant que les hauteurs sont ajustées correctement.
+Résumé
+En résumé, ce code est un moyen efficace de gérer dynamiquement la mise en page d'une page web en fonction de la taille de la fenêtre et des changements de contenu. Cela assure une bonne expérience utilisateur, en évitant les débordements et en garantissant que les éléments restent proportionnés et visibles.
+
+/* nav a {
+  text-decoration: none;
+  color: initial;
+}
+nav a:hover {
+  color: initial;
+  background-color: transparent;
+}
+Responsive design : Pensez à utiliser des unités flexibles comme %, vw, ou vh pour rendre votre site responsive. Utilisez également des media queries pour ajuster le style en fonction des tailles d'écran. à ajouter  */
+
+/* mettre en début de projet les fonts à télécharger (manière rapide, sinon pr du professionnel c'est mieux de créer un fichier ou est stocké les fonts et images ,...
+dans tous les cas dans google font choisir une font puis un type de font ici oswald Regular 400
+a.google font et taper le font choisi ici oswald mais je peux choisir un autre
+b.choisir le style voulu ici regular 400
+c.hide selected family
+et là suivant si on veux juste le lien pour télécharger et qu'on mettra dans le projet (cas1) 
+d.get embed code
+e.import et copier le lien le mettre ici
+ou bien tout télécharger (cas2)
+d.download all, dézipper puis on range dans un dossier que l'on crée dans son ordi genre font-projetx
+e.on crée un dossier fonts dans le dossier du projet html
+*/
+/* pour le cas 1 import*/
+
+/* pourlataille de la police vw : viewport width si on déclare une grandeur de
+taille de police avec cette unité si on grandit l
+'écran la police va grandir aussi */
+
+function button2Effect() {
+  clearDiv();
+  const webSiteMainSection = document.getElementById("mainSections");
+  const personnalInfoUl = document.createElement("ul");
+  const li1 = document.createElement("li");
+  const li2 = document.createElement("li");
+  const li3 = document.createElement("li");
+  const li4 = document.createElement("li");
+
+  li1.textContent = "permis de conduire B";
+  li2.textContent = "Née à tournai, le 3 juin 1987";
+  li3.textContent = "rue du druguet,17";
+  li4.textContent = "7540 Rumillies";
+
+  // const items = [
+  //   "Permis de conduire B",
+  //   "Née à Tournai, le 3 juin 1987",
+  //   "Rue du Druguet, 17",
+  //   "7540 Rumillies"
+  // ];
+
+  // items.forEach(item => {
+  //   const li = document.createElement("li");
+  //   li.textContent = item;
+  //   personnalInfoUl.appendChild(li);
+  // });
+
+  personnalInfoUl.appendChild(li1);
+  personnalInfoUl.appendChild(li2);
+  personnalInfoUl.appendChild(li3);
+  personnalInfoUl.appendChild(li4);
+
+  webSiteMainSection.appendChild(personnalInfoUl);
+
+  const imgProfilPicture = document.createElement("img");
+  img.src = "https://via.placeholder.com/150"; // Remplacer par l'URL de l'image
+  img.alt = "photo de profil";
+  webSiteMainSection.appendChild(imgProfilPicture);
+  //         const img = document.createElement('img'); : Crée un élément img (une image).
+
+  // img.src = 'https://via.placeholder.com/150'; : Définit la source de l'image (un lien vers une image d'espace réservé).
+
+  // img.alt = 'Image exemple'; : Fournit un texte alternatif pour l'image, important pour l'accessibilité.
+
+  // div.appendChild(img); : Ajoute l'image à la div.
+}
+
+document.getElementById(button2).addEventListener("click", button2Effect);
+
+function button3Effect() {
+  clearDiv();
+  const webSiteMainSection = document.getElementById("mainSections");
+  const personnalUl = document.createElement("ul");
+  const h2 = document.createElement("h2");
+
+  h2.innerHTML = "Mes atouts";
+  webSiteMainSection.appendChild(h2);
+
+  const atouts = [
+    "Passionnée",
+    "Curieuse",
+    "Autodidacte",
+    "Focalisée sur son travail",
+    "Ultra-motivée",
+    "Enthousiaste",
+    "Persévérante",
+    "Engagée",
+    "Créative",
+  ];
+
+  atouts.forEach((atout) => {
+    const li = document.createElement("li");
+    li.textContent = atout;
+    personnalUl.appendChild(li);
+  });
+  webSiteMainSection.appendChild(personnalUl);
+}
+const img = document.createElement("img");
+img.src = "https://via.placeholder.com/150"; // Remplacer par l'URL de l'image
+img.alt = "photo de profil";
+webSiteMainSection.appendChild(img);
+}
+function button7Effect() {
+  clearDiv();
+  const webSiteMainSection = document.getElementById("mainSections");
+  const h2 = document.createElement("h2");
+  h2.innerHTML = "Mes passions";
+  webSiteMainSection.appendChild(h2);
+
+  const myPassionsUl = document.createElement("ul");
+
+  const passions = [
+    "Jeux de sociétés",
+    "Programmation en gml, python et via scratch",
+    "Escape Games",
+    "Autres: karaoké, tennis, broderie",
+  ];
+
+  passions.forEach((passion) => {
+    const li = document.createElement("li");
+    li.textContent = passion;
+    myPassionsUl.appendChild(li);
+  });
+
+  // });
+  // const li1 = document.createElement("li");
+  // const li2 = document.createElement("li");
+  // const li3 = document.createElement("li");
+  // const li4 = document.createElement("li");
+
+  // li1.innerHTML = "Jeux de sociétés";
+  // li2.innerHTML = "Programmation en gml, python et via scratch";
+  // li3.innerHTML = "Enigmes mathématiques";
+  // li4.innerHTML = "Autres: karaoké, tennis, broderie";
+
+  webSiteMainSection.appendChild(myPassionsUl);
+}
+
+document.getElementById(button7).addEventListener("click", button7Effect);
+
+@media (max-width: 1200px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    background: #e0e1f4;
+    font-family: "Oswald", sans-serif;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 100px calc(var(--content-height) -20% -100px);
+    grid-template-areas:
+      "concernant-cv headerBox "
+      "concernant-cv contact "
+      "concernant-cv main ";
+  }
+  #concernant-cv {
+    height: var(--viewport-height);
+    grid-area: concernant-cv;
+    background-color: #3b4694;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-areas:
+      "rien"
+      "section";
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #concernant-cv ul {
+    grid-area: section;
+    background-color: #3b4694;
+    left: 10px;
+    background-color: #3b4694;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+  }
+  #concernant-cv section li {
+    text-align: center;
+    font-weight: 700;
+    color: #eba37f;
+  }
+  #contact {
+    height: 100px;
+    grid-area: contact;
+    background: rgb(192, 140, 100);
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+  #contact h2 {
+    color: rgb(10, 5, 43);
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+  }
+  #contact ul {
+    margin: 5px 0px;
+    padding: 0px;
+    display: flex;
+    /* flex direction en une seule colonne flex-direction: column */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* La propriété CSS justify-content définit la manière dont le navigateur répartit l'espace entre et autour des éléments de contenu le long de l' axe principal d'un conteneur flexible et de l' axe en ligne des conteneurs de grille et multicolonnes. */
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  #contact li {
+    list-style: none;
+    color: #b4b8e4;
+    font-family: sans-serif;
+    /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+    /* première valeur haut bas et deuxième gauche droite */
+    margin: 5px 30px;
+    font-size: 0.8rem;
+  }
+  main {
+    height: calc(var(--content-height) - var(--header-height)- 100px);
+    background: rgb(172, 193, 250);
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-items: auto;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 10px 5px;
+    padding: 15px 15px 10px 15px;
+  }
+
+  section {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 1.8rem; /* Smaller font size */
+  }
+}
+/* nav a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+} */
+
+:root {
+  /* --viewport-height: 100vh; Hauteur du viewport */
+  --header-height: 30%; /* 40% de la hauteur du parent */
+  --main-height: 70%; /* 80% de la hauteur du parent */
+  --aboutcv-height: 100%;
+  --contact-height: var(--header-height);
+  --content-height: auto;
+  --viewport-width: 100vw;
+  --aboutcv-width: 10%;
+  --contact-width: 20%;
+  --header-width: 70%;
+
+  --main-width: 90%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #e0e1f4;
+  font-family: "Oswald", sans-serif;
+  padding: 0px;
+  display: grid;
+  grid-template-columns:
+    var(--aboutcv-width) var(--header-width)
+    var(--contact-width);
+  grid-template-rows: var(--header-height) var(--main-height);
+  grid-template-areas:
+    "concernant-cv headerBox contact"
+    "concernant-cv main main ";
+}
+#imageContainer {
+  grid-area: photo;
+}
+#concernant-cv {
+  height: var(--viewport-height);
+  grid-area: concernant-cv;
+  background-color: #3b4694;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 50% 25%;
+  grid-template-areas:
+    "rien"
+    "section";
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#concernant-cv ul {
+  grid-area: section;
+  background-color: #3b4694;
+  left: 10px;
+  background-color: #3b4694;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 30px;
+  justify-items: center;
+  align-items: center;
+  list-style: none;
+}
+#concernant-cv section li {
+  text-align: center;
+  font-weight: 700;
+  color: #eba37f;
+}
+header {
+  position: relative;
+
+  grid-area: headerBox;
+  /* min-height: 100px; */
+  /* tjs mettre la largeur en pourcentage pour s'adapter à tous types d'écrans */
+  /* mettre tjs une couleur sinon on ne sait pas voir notre main */
+  background: #0a0f29;
+  /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+  /* première valeur haut bas et deuxième gauche droite */
+  margin: 0 0;
+  /* une bordure autour du cadre (exterieur) */
+  /* border: 0px rgba(188, 152, 52, 0.88); */
+
+  border-width: 0px 0px 0 0px;
+  /* pour des coins arrondis de notre "cadre" main 1 er chiffre gauche en haut puis gauche à droite puis continue comme ca dans sens aiguille d'une montre*/
+  /* border-radius: 10px 10px 0px 0px; */
+  /*  ombre de la boite("cadre") 1ere entrée x offset deuxième y offset troisème blur 4 ième spread*/
+  /* box-shadow: -3px -3px 3px 0px rgba(188, 152, 52, 0.88); */
+  /* padding: ca définit La zone de remplissage d'un élément (ici  boite maine) est l'espace entre son contenu et sa bordure (interieur). */
+  padding: 0px 5px;
+}
+header::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  background-image: url("./assets/images/photoidentité.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: calc(var(--header-height) - 120px);
+  left: -80px;
+}
+header h1 {
+  text-transform: uppercase;
+  /* espace entre lettres */
+  letter-spacing: 5px;
+  /* alignement du texte gauche/droite */
+  text-align: left;
+  /* taille de police */
+  font-size: 2.4rem;
+  /* niveau de gras */
+  font-weight: 700;
+  /* style :italique/oblique/normal */
+  font-style: italic;
+  /* type d'ombre */
+  text-shadow: -2px -2px 6px #e0e1f4;
+  /* couleur */
+  color: #e0e1f4;
+  /* soulignement */
+  text-decoration: none;
+  /* la police mettre toujours une police de secours si on arrive pas à trouver la première police (une  */
+  font-family: "Oswald", sans-serif;
+
+  /* margin Espace à coté et sous l'élément */
+  margin: 20px 0px 20px 50px;
+}
+header h2 {
+  text-transform: uppercase;
+  /* espace entre lettres */
+  letter-spacing: 3px;
+  /* alignement du texte gauche/droite */
+  text-align: center;
+  /* taille de police */
+  font-size: 1.2rem;
+  /* niveau de gras */
+  font-weight: 600;
+  /* style :italique/oblique/normal */
+  font-style: italic;
+  /* type d'ombre */
+  text-shadow: -0px -0px 0px #e0e1f4;
+  /* couleur */
+  color: #e0e1f4;
+  /* soulignement */
+  text-decoration: none;
+  /* la police mettre toujours une police de secours si on arrive pas à trouver la première police (une  */
+  font-family: "Oswald", sans-serif;
+
+  /* margin Espace à coté et sous l'élément */
+  margin: 10px 0px 10px 50px;
+}
+
+#contact {
+  height: var(--contact-height);
+  grid-area: contact;
+  background: #0a0f29;
+}
+
+/* .menu-icon {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #444;
+  border-radius: 5px;
+  text-decoration: none;
+} */
+
+/* .menu-icon:hover {
+  background-color: #575757;
+} */
+
+/* textdecoration none pour pas voir changement style quand on clique sur liens les hypertext */
+#contact h2 {
+  color: #ee6117;
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px;
+}
+#contact ul {
+  margin: 5px 20px;
+  padding: 0px;
+  display: flex;
+  /* flex direction en une seule colonne flex-direction: column */
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* La propriété CSS justify-content définit la manière dont le navigateur répartit l'espace entre et autour des éléments de contenu le long de l' axe principal d'un conteneur flexible et de l' axe en ligne des conteneurs de grille et multicolonnes. */
+  justify-content: center;
+  text-align: center;
+}
+
+#contact li {
+  list-style: none;
+  color: #b4b8e4;
+  font-family: sans-serif;
+  /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+  /* première valeur haut bas et deuxième gauche droite */
+  margin: 5px 0px;
+  font-size: 0.8rem;
+}
+main {
+  /* height: 700px; */
+  background: rgb(172, 193, 250);
+  overflow-y: auto;
+  /* //permet défilement vertical */
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: auto;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 10px 5px;
+  padding: 15px 15px 10px 15px;
+}
+section {
+  /* tjs mettre min height pour laisser la possibilité d'être plus grand si nécessaire */
+
+  /* mettre tjs une couleur sinon on ne sait pas voir notre main */
+
+  /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+  /* première valeur haut bas et deuxième gauche droite */
+
+  /* une bordure autour du cadre (exterieur) */
+  border: 0px;
+  /* pour des coins arrondis de notre "cadre" main 1 er chiffre gauche en haut puis gauche à droite puis continue comme ca dans sens aiguille d'une montre*/
+  border-radius: 0px 0px 0px 0px;
+  /*  ombre de la boite("cadre") 1ere entrée x offset deuxième y offset troisème blur 4 ième spread*/
+  /* padding: ca définit La zone de remplissage d'un élément (ici  boite maine) est l'espace entre son contenu et sa bordure (interieur). */
+
+  width: 45%;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px; */
+}
+
+section h2 {
+  /* formater par rapport au majuscules */
+  text-transform: uppercase;
+  /* espace entre lettres */
+  letter-spacing: 3px;
+  /* alignement du texte gauche/droite */
+  text-align: left;
+  /* taille de police */
+  font-size: 1.2rem;
+  /* niveau de gras */
+  font-weight: 700;
+  /* style :italique/oblique/normal */
+  font-style: italic;
+  /* type d'ombre */
+  text-shadow: -6px -6px 12px #e76c31;
+  /* couleur */
+  color: #e76c31;
+  /* soulignement */
+  text-decoration: underline;
+  /* la police mettre toujours une police de secours si on arrive pas à trouver la première police (une  */
+  font-family: "Oswald", sans-serif;
+
+  /* margin Espace à coté et sous l'élément */
+  margin: 10px 10px 20px 10px;
+}
+section p {
+  /* formater par rapport au majuscules */
+  text-transform: none;
+  /* espace entre lettres */
+  letter-spacing: 1px;
+  /* alignement du texte gauche/droite */
+  text-align: left;
+  /* taille de police */
+  font-size: 0.8rem;
+  /* niveau de gras */
+  font-weight: 700;
+  /* style :italique/oblique/normal */
+  font-style: normal;
+  /* couleur */
+  color: #0b0e29;
+  /* soulignement */
+  text-decoration: none;
+  /* la police mettre toujours une police de secours si on arrive pas à trouver la première police (une  */
+  font-family: "Roboto", sans-serif;
+
+  /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+  /* première valeur haut bas et deuxième gauche droite */
+  margin: 10px 5px 10px 30px;
+}
+section h3 {
+  /* formater par rapport au majuscules */
+  text-transform: uppercase;
+  /* espace entre lettres */
+  letter-spacing: 3px;
+  /* alignement du texte gauche/droite */
+  text-align: left;
+  /* taille de police */
+  font-size: 1rem;
+  /* niveau de gras */
+  font-weight: 800;
+  /* style :italique/oblique/normal */
+  font-style: italic;
+  /* type d'ombre */
+
+  /* couleur */
+  color: rgb(188, 112, 52);
+  /* soulignement */
+  text-decoration: underline;
+  /* la police mettre toujours une police de secours si on arrive pas à trouver la première police (une  */
+  font-family: "Oswald", sans-serif;
+
+  /* margin Espace à coté et sous l'élément */
+  margin: 10px 30px;
+}
+/* header ici mettre les éléments présents dans le header*/
+
+/* header ici mettre les éléments présents dans le main*/
+/* 1.le main en lui même */
+/* 2.les éléments dans le main */
+
+/* les polices libres de droit google font aller dans font :oswald
+*/
+
+/* https://developer.mozilla.org/fr/docs/Web/CSS/position */
+/* https://www.pierre-giraud.com/html-css-apprendre-coder-cours/position/ */
+/* sans élément en relative , de base, l'élément en absolute l'est par rapport au bodyil faut mettre une position relative au parent pour contraindre l'élement en absolute dans ses frontières */
+
+#competences p {
+  /* formater par rapport au majuscules */
+  text-transform: none;
+  /* espace entre lettres */
+  letter-spacing: 1px;
+  /* alignement du texte gauche/droite */
+  text-align: left;
+  /* taille de police */
+  font-size: 0.8rem;
+  /* niveau de gras */
+  font-weight: 600;
+  /* style :italique/oblique/normal */
+  font-style: normal;
+  /* couleur */
+  color: rgb(10, 5, 43);
+  /* soulignement */
+  text-decoration: none;
+  /* la police mettre toujours une police de secours si on arrive pas à trouver la première police (une  */
+  font-family: "Roboto", sans-serif;
+
+  /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+  /* première valeur haut bas et deuxième gauche droite */
+  margin: 10px 0px 10px 50px;
+}
+section ul {
+  list-style: none;
+  text-transform: none;
+  /* espace entre lettres */
+  letter-spacing: 0.8px;
+  /* alignement du texte gauche/droite */
+  text-align: left;
+  /* taille de police */
+  font-size: 0.8rem;
+  /* niveau de gras */
+  font-weight: 600;
+  /* style :italique/oblique/normal */
+  font-style: normal;
+  /* couleur */
+  color: rgb(10, 5, 43);
+  /* soulignement */
+  text-decoration: none;
+  /* la police mettre toujours une police de secours si on arrive pas à trouver la première police (une  */
+  font-family: "Roboto", sans-serif;
+
+  /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+  /* première valeur haut bas et deuxième gauche droite */
+  margin: 10px 20px 10px 50px;
+}
+section li {
+  text-transform: none;
+  /* espace entre lettres */
+  letter-spacing: 1px;
+  /* alignement du texte gauche/droite */
+  text-align: left;
+  /* taille de police */
+  font-size: 0.8rem;
+  /* niveau de gras */
+  font-weight: 600;
+  /* style :italique/oblique/normal */
+  font-style: normal;
+  /* couleur */
+  color: rgb(10, 5, 43);
+  /* soulignement */
+  text-decoration: none;
+  /* la police mettre toujours une police de secours si on arrive pas à trouver la première police (une  */
+  font-family: "Roboto", sans-serif;
+
+  /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+  /* première valeur haut bas et deuxième gauche droite */
+}
+
+.image-container {
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+img {
+  padding: 0% 0% 0% 50%;
+}
+#atout .image-container::before {
+  content: "intelligente";
+  display: block; /* Nécessaire pour que le pseudo-élément s'affiche */
+  height: 50px;
+  line-height: 50px; /* Centrer verticalement le texte */
+  color: white; /* Couleur du texte */
+
+  position: absolute;
+  top: 60px; /* Ajustez selon l'emplacement souhaité */
+  left: 0; /* Aligner à gauche de l'image */
+  width: 100%; /* Prendre toute la largeur du conteneur */
+  text-align: center; /* Centrer le texte horizontalement */
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* a règle CSS height: 100vh; appliquée au body signifie que le corps du document occupera 100% de la hauteur de la fenêtre d'affichage (viewport). Voici quelques points clés à propos de cette règle :
+
+Explication
+vh (viewport height) : L'unité vh signifie "viewport height". 1 vh correspond à 1% de la hauteur totale de la fenêtre d'affichage. Donc, 100vh signifie que l'élément occupera toute la hauteur de la fenêtre. */
+
+
+  
+#atout .image-container::before {
+  content: "intelligente";
+  display: block; /* Nécessaire pour que le pseudo-élément s'affiche */
+  height: 50px;
+  line-height: 50px; /* Centrer verticalement le texte */
+  color: white; /* Couleur du texte */
+
+  position: absolute;
+  top: 60px; /* Ajustez selon l'emplacement souhaité */
+  left: 0; /* Aligner à gauche de l'image */
+  width: 100%; /* Prendre toute la largeur du conteneur */
+  text-align: center; /* Centrer le texte horizontalement */
+}
+
+couleurs comme #b4b8e4 sur un fond de #0a0f29
+
+@media (max-height: 700px) {
+  :root {
+    --viewport-height: auto;
+    --viewport-width: auto;
+    --content-height: auto;
+    --aboutcv-height: calc(15% * var(viewport-height));
+    --header-height: calc(25% * var(viewport-height));
+    --main-height: calc(40% * var(viewport-height));
+    --contact-height: calc(20% * var(viewport-height));
+    --body-height: calc(
+      var(--header-height) + var(--main-height)+var(--asidecontact-height)
+    );
+  }
+
+  body {
+    height: 700px;
+    width: 100vw;
+    background: #e0e1f4;
+    font-family: "Oswald", sans-serif;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 100px calc(var(--content-height) -20% -200px);
+    grid-template-areas:
+      "concernant-cv headerBox contact"
+      "concernant-cv main main";
+  }
+  #concernant-cv {
+    height: var(--content-height);
+    grid-area: concernant-cv;
+    background-color: #3b4694;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-areas:
+      "rien"
+      "section";
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #concernant-cv ul {
+    grid-area: section;
+    left: 10px;
+    background-color: #3b4694;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+    text-wrap: wrap;
+  }
+  #concernant-cv section li {
+    text-align: center;
+    font-weight: 700;
+    color: #eba37f;
+  }
+  #contact {
+    height: 100px;
+    grid-area: contact;
+    background: rgb(192, 140, 100);
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+  #contact h2 {
+    color: rgb(10, 5, 43);
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+  }
+  #contact ul {
+    margin: 5px 0px;
+    padding: 0px;
+    display: flex;
+    /* flex direction en une seule colonne flex-direction: column */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* La propriété CSS justify-content définit la manière dont le navigateur répartit l'espace entre et autour des éléments de contenu le long de l' axe principal d'un conteneur flexible et de l' axe en ligne des conteneurs de grille et multicolonnes. */
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  #contact li {
+    list-style: none;
+    color: #b4b8e4;
+    font-family: sans-serif;
+    /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+    /* première valeur haut bas et deuxième gauche droite */
+    margin: 5px 10px;
+    font-size: 0.8rem;
+  }
+  #apropos {
+    grid-area: li1;
+  }
+  #cvPDF {
+    grid-area: li2;
+  }
+  #cvComplet {
+    grid-area: li3;
+  }
+  #versProjet {
+    grid-area: li4;
+  }
+
+  main {
+    height: calc(var(--content-height) - var(--header-height)- 100px);
+    background: rgb(172, 193, 250);
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-items: auto;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 10px 5px;
+    padding: 15px 15px 10px 15px;
+  }
+
+  section {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 1.8rem; /* Smaller font size */
+  }
+}
+:root.small-ratio {
+  --correction: 50%; /* Correction spécifique pour la petite proportion */
+  --header-height: calc(var(--header-height-base) * var(--correction));
+}
+:root.height-ratio {
+  --correction: 100%; /* Correction spécifique pour la petite proportion */
+  --header-height: calc(var(--header-height-base) * var(--correction));
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Crée des colonnes flexibles */
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item {
+  flex: 1 1 30%; /* Chaque item occupe 30% de l'espace disponible */
+}
+@media (min-width:1201px) and (min-height: 1001px) {
+  :root {
+    --header-height: 40vh;
+    overflow-y: auto;
+    /* //permet défilement vertical */
+  }
+  header::before {
+    top: var(--header-height);
+    left: 0px;
+    transform: translateX(calc(50vw - 50%)) translateY(calc(-50% ));
+  }
+}
+@media (min-width:1201px) and (max-height: 1000px) {
+  :root {
+    --header-height: 40vh;
+    overflow-y: visible;
+    /* //permet défilement vertical */
+  }
+  header::before {
+    top: var(--header-height);
+    left: 0px;
+  }}
+
+@media (max-width:1200px) and (min-width: 1001px) and (max-height: 1000px) and (min-height: 701px) {
+  :root {
+    --header-height: 40vh
+    overflow-y: auto;
+  }
+  header::before {
+    top: var(--header-height);
+    left: 0px;
+    transform: translateX(calc(50vw - 50%)) translateY(calc(-50% ));
+  }
+}
+@media (max-width:1200px) and (min-width: 1001px) and (max-height: 1000px) and (min-height: 701px) {
+  :root {
+    --header-height: 40vh
+    overflow-y: auto;
+  }
+  header::before {
+    top: var(--header-height);
+    left: 0px;
+    transform: translateX(calc(50vw - 50%)) translateY(calc(-50% ));
+  }
+}
+@media (max-width: 1000px) and (min-width: 700px) and (max-height: 700px) and (min-height: 400px) {
+  :root {
+    --header-height: 22.5vh;
+  }
+  header::before {
+    top: var(--header-height);
+    left: 0px;
+    transform: translateX(calc(50vw - 50%)) translateY(calc(-50% ));
+  }
+}
+@media (max-width: 700px) and (max-height: 700px) and (min-height: 400px) {
+  :root {
+    --header-height: 22.5vh;
+  }
+  header::before {
+    top: var(--header-height);
+    left: 0px;
+    transform: translateX(calc(50vw - 50%)) translateY(calc(-50% ));
+  }
+}
+@media (max-height: 700px) and (min-height: 400px) and (min-width: 700px) {
+  :root {
+    --header-height:40vh; 
+  }
+
+  header::before {
+    top: var(--header-height);
+    left: 0px;
+    transform: translateX(calc(50vw - 50%)) translateY(calc(-50% ));
+  }
+}
+@media (max-height: 700px) and (min-height: 400px) {
+  :root {
+    --header-height: 40vh
+  }
+  header::before {
+    top: var(--header-height);
+    left: 0px;
+    transform: translateX(calc(50vw - 50%)) translateY(calc(-50% ));
+  }
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+  :root {
+    --correction: 100%; /*correspond à 30vh*/
+    --header-height: calc(var(--header-height-base) * var(--correction));
+  }
+  header::before {
+    top: var(--header-height);
+    left: 0px;
+    transform: translate(calc(50vw - 50%), calc(-50% * var(-correction)));
+  }
+}
+
+@media (max-width: 480px) and (min-width: 381px) {
+  :root {
+    --correction: 116%; /*correspond 35vh*/
+    --header-height: calc(var(--header-height-base) * var(--correction));
+  }
+  header::before {
+    top: var(--header-height);
+    left: 0px;
+    transform: translate(calc(50vw - 50%), calc(-50% * var(-correction)));
+  }
+}
+@media (min-width: 310px) and (max-width: 380px) {
+  :root {
+    --correction: 1.33; /*correspond 40vh*/
+    --header-height: calc(var(--header-height-base) * var(--correction));
+  }
+  header::before {
+    top: var(--header-height);
+    left: 0px;
+    transform: translate(calc(50vw - 50%), calc(-50% * var(-correction)));
+  }
+}
+section h2::after {
+  content: "\2913";
+  left: 50px;
+  text-decoration: none;
+  color: #8a3f1c;
+}
+@media screen and (min-height: 801px) and (min-width: 700px) {
+  /* //permet défilement vertical */
+  /* Styles à appliquer si la condition est remplie */
+}
+@media screen and (max-height: 800px) and (min-width: 700px) {
+  overflow-y : auto;
+  /* Styles à appliquer si la condition est remplie */
+}
+@media screen and (max-width: 700px) {
+  overflow-y : auto;
+  /* Styles à appliquer si la condition est remplie */
+}
+@media screen and (max-width: 700px) {
+  overflow-y : auto;
+  /* Styles à appliquer si la condition est remplie */
+}
+
+#contact ul {
+  à voir 
+    /* margin: 5px 20px;
+    padding: 0px;
+    display: flex; */
+  /* flex direction en une seule colonne flex-direction: column */
+  /* flex-direction: column;
+    flex-wrap: wrap; */
+  /* La propriété CSS justify-content définit la manière dont le navigateur répartit l'espace entre et autour des éléments de contenu le long de l' axe principal d'un conteneur flexible et de l' axe en ligne des conteneurs de grille et multicolonnes. */
+  /* justify-content: center;
+    text-align: center;{*/
+  /*
+  #contact li {
+    à voir
+    /* list-style: none;
+    color: #b4b8e4;
+    font-family: sans-serif;
+    /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+  /* première valeur haut bas et deuxième gauche droite */
+  /* margin: 5px 0px; */
+  /* font-size: 0.8rem; */
+  header {
+    position: relative;
+    /* min-height: 100px; */
+    /* tjs mettre la largeur en pourcentage pour s'adapter à tous types d'écrans */
+    /* mettre tjs une couleur sinon on ne sait pas voir notre main */
+    background: #0a0f29;
+    /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+    /* première valeur haut bas et deuxième gauche droite */
+    margin: 0 0;
+    /* une bordure autour du cadre (exterieur) */
+    /* border: 0px rgba(188, 152, 52, 0.88); */
+  
+    border-width: 0px 0px 0 0px;
+    /* pour des coins arrondis de notre "cadre" main 1 er chiffre gauche en haut puis gauche à droite puis continue comme ca dans sens aiguille d'une montre*/
+    /* border-radius: 10px 10px 0px 0px; */
+    /*  ombre de la boite("cadre") 1ere entrée x offset deuxième y offset troisème blur 4 ième spread*/
+    /* box-shadow: -3px -3px 3px 0px rgba(188, 152, 52, 0.88); */
+    /* padding: ca définit La zone de remplissage d'un élément (ici  boite maine) est l'espace entre son contenu et sa bordure (interieur). */
+    padding: 0px 5px;
+  }
+  /* .menu-icon {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #444;
+    border-radius: 5px;
+    text-decoration: none;
+  } */
+
+/* .menu-icon:hover {
+    background-color: #575757;
+  } */
+
+/* textdecoration none pour pas voir changement style quand on clique sur liens les hypertext */
+/* <span class="atout1">Passionnée</span>
+<span class="atout2">Curieuse</span>
+<span class="atout3">Autodidacte</span>
+<span class="atout4">Persévérente</span>
+<span class="atout5">Créative</span>
+<span class="atout6">Engagée</span> */
+/* --width-height-ecranstandard: 16/9;
+--width-height-ecrantablette: 16/10;
+--width-height-ecranstandard: 4/3;
+--width-height-ecranstandard: 2/1;
+--width-height-ecranstandard: 9/19;
+--width-height-ecranstandard: 17/9; */
+/* 
+--header-height-ecranstandard: 16/9;(largeur , hauteur)
+--header-height-desuet: 4/3;
+--header-height-ecrantablette: 16/10;
+--header-height-ecrantablette: 3/2;
+--header-height-ecransmartphone1: 2/1;(hauteur, largeur)
+--header-height-ecransmarthophe2: 1/1;
+--header-height-ecransmartphone3: 9/16;
+--header-height-ecranultramodernesmartphone: 17/9; */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* pour le cas 2 font face (police de caractère) */
+
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-Bold.ttf) format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-ExtraLight.ttf) format("woff");
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-Light.ttf) format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-Medium.ttf) format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-SemiBold.ttf) format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* https://developer.mozilla.org/fr/docs/Web/CSS/position */
+  /* https://www.pierre-giraud.com/html-css-apprendre-coder-cours/position/ */
+  /* sans élément en relative , de base, l'élément en absolute l'est par rapport au bodyil faut mettre une position relative au parent pour contraindre l'élement en absolute dans ses frontières */
+  /*.........................................main and sections.................................*/
+
+  /* https://developer.mozilla.org/fr/docs/Web/CSS/position */
+  /* https://www.pierre-giraud.com/html-css-apprendre-coder-cours/position/ */
+  /* sans élément en relative , de base, l'élément en absolute l'est par rapport au bodyil faut mettre une position relative au parent pour contraindre l'élement en absolute dans ses frontières */
+}
+
+
+/* nav a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+} */
+
+
+/* 
+and (var(--rapport-widthandheight) < 1.63) */
+
+/* https://developer.mozilla.org/fr/docs/Web/CSS/position */
+/* https://www.pierre-giraud.com/html-css-apprendre-coder-cours/position/ */
+/* sans élément en relative , de base, l'élément en absolute l'est par rapport au bodyil faut mettre une position relative au parent pour contraindre l'élement en absolute dans ses frontières */
+La hauteur de la fenêtre du navigateur, souvent appelée viewport height ou hauteur du viewport, fait référence à l'espace visible de la page dans le navigateur, c'est-à-dire la partie de la page qui est effectivement affichée à l'utilisateur sans avoir à faire défiler. Elle ne correspond pas nécessairement à la hauteur totale de l'écran de l'appareil.
+Pour obtenir la hauteur totale de la page, y compris la partie cachée qui peut nécessiter un défilement (scrolling), tu peux utiliser des propriétés JavaScript liées à la hauteur du document entier. Cela inclut à la fois la partie visible et la partie cachée (en dehors du viewport).
+const main = document.querySelector("main");
+main.style.marginTop = headerHeight + "px";
+Quelle est la meilleure solution ?
+Si votre site CV est relativement simple, avec juste quelques sections (comme À propos de moi, Compétences, Expériences, etc.), l’utilisation de liens d’ancrage est une solution efficace et légère. Cela facilite aussi la navigation rapide pour l’utilisateur.
+
+En revanche, si votre CV contient beaucoup de contenu ou si vous souhaitez créer une expérience plus interactive (par exemple pour un portfolio en ligne), des boutons pour afficher/masquer les sections pourraient être une bonne solution. Assurez-vous dans ce cas de bien gérer l’accessibilité avec des attributs aria-expanded et aria-controls pour chaque bouton.
+e choix entre utiliser un lien d'ancrage (<a href="#aboutMeSection">) ou un bouton pour afficher/masquer des sections dépend de plusieurs facteurs, notamment de l'expérience utilisateur que vous souhaitez offrir et de la complexité de votre site. Voici les avantages et inconvénients de chaque option :
+
+  1. Utilisation des liens d'ancrage (<a href="#aboutMeSection">)
+  Avantages :
+  Simplicité : Un lien d'ancrage est facile à mettre en œuvre et n'ajoute pas de complexité en termes de code.
+  Accessibilité : Les liens d'ancrage sont naturellement accessibles, et les lecteurs d'écran ainsi que les navigateurs savent les interpréter correctement.
+  Navigation fluide : Lorsque l'utilisateur clique sur un lien d'ancrage, il est simplement redirigé vers la section souhaitée, ce qui crée une navigation fluide et cohérente.
+  Indexation : Les moteurs de recherche peuvent indexer des liens d'ancrage, ce qui peut parfois être bénéfique pour le référencement (SEO).
+  Inconvénients :
+  Pas de contrôle d'affichage dynamique : Contrairement aux boutons d'affichage/masquage, le contenu de la section est toujours visible et accessible, ce qui peut alourdir la page si elle comporte de nombreuses sections.
+  2. Utilisation de boutons pour afficher/masquer les sections
+  Avantages :
+  
+  Contrôle de l'affichage : Cette approche permet de masquer les sections non pertinentes et d'afficher uniquement ce que l'utilisateur souhaite voir, rendant la page plus propre et moins chargée.
+  Expérience interactive : En masquant certaines sections par défaut, vous pouvez rendre la navigation plus dynamique et engageante pour les utilisateurs.
+  Réduction de la longueur de la page : Moins de contenu visible permet à l'utilisateur de voir rapidement les éléments principaux de la page et de révéler les détails selon ses besoins.
+  Inconvénients :
+  
+  Complexité accrue : La gestion d'affichage dynamique nécessite l'ajout de JavaScript, et potentiellement de CSS avancé, ce qui peut rendre le code plus complexe et plus difficile à maintenir.
+  Accessibilité : Le contenu masqué peut être moins bien interprété par les lecteurs d’écran et autres technologies d’assistance, sauf si une attention particulière est portée à l'accessibilité.
+  SEO : Les moteurs de recherche peuvent avoir plus de difficulté à indexer du contenu masqué par défaut, ce qui peut impacter le référencement.
+  <h2>
+    En reconversion professionnelle dans le développement informatique
+    via une formation en web front-end. je sollicite un stage dans votre
+    entreprise pour mettre en pratique mes compétences.
+  </h2>
+  Comparaison avec Flexbox :
+En Flexbox, justify-content est utilisé pour aligner les éléments flex dans l'espace disponible sur l'axe principal (généralement l'axe horizontal si la direction est de gauche à droite).
+En Grid, justify-content affecte l'ensemble de la grille par rapport à son conteneur, et non directement les éléments individuels à l'intérieur de la grille.
+Donc, oui, justify-content fonctionne bien avec Grid, mais il agit sur la grille elle-même (conteneur) plutôt que sur les éléments internes.
+/* main {
+  column-count: 2;
+  column-fill: balance;
+  column-gap: 15px;
+  grid-area: main;
+  margin: 15px 15px 10px 15px;
+  <p>
+    Grâce à ma formation de développeur front-end, ainsi qu'à la
+    formation en ligne que j'ai suivie, je développe mes compétences
+    en langages de balisage, en développement ainsi qu'en gestion de
+    bases de données. Je me forme également à l’utilisation des outils
+    et des bonnes pratiques nécessaires à la création de sites web
+    modernes attrayant et interactifs
+  </p>
+
+  #2a3c7d
+  const mainContent = document.querySelector("main");
+  const header = document.querySelector("header");
+  function updateHeights() {
+    // const principal = document.getElementById("principal");
+    // const sectionPrincipalHeight = parseFloat(getComputedStyle(principal).height);
+    // console.log(contentHeight);
+    const header = document.querySelector("header");
+
+    const bodyHeight = document.body.offsetHeight;
+    const headerHeight = header.offsetHeight;
+    // const main = document.querySelector("main");
+    // main.style.marginTop = headerHeight + "px";
+    // const h1 = document.querySelector("h1");
+    // const h1Height = h1;
+
+    const viewportHeight = window.innerHeight;
+    const totalHeight = document.body.scrollHeight;
+
+    // Définir les propriétés CSS
+    document.documentElement.style.setProperty(
+      "--total-height",
+      `${totalHeight}px`
+    );
+    document.documentElement.style.setProperty(
+      "--body-height",
+      `${bodyHeight}px`
+    );
+    document.documentElement.style.setProperty(
+      "--header-height",
+      `${headerHeight}px`
+    );
+    document.documentElement.style.setProperty(
+      "--main-height",
+      `${bodyHeight - headerHeight}px`
+    );
+    document.documentElement.style.setProperty(
+      "--viewport-height",
+      `${viewportHeight}px`
+    );
+
+    // Ajuster la hauteur de main
+    if (mainContent) {
+      mainContent.style.maxHeight = `${totalHeight - headerHeight}px`;
+    }
+  }
+
+  // Appeler updateHeights lors du chargement et du redimensionnement
+  updateHeights();
+  window.addEventListener("resize", updateHeights);
+});
+.cardContent {
+  width: 75%;
+  border: 2px solid var(--color-bleu-fonce);
+  border-top: 0px;
+  margin: 0% auto 0% auto;
+  padding: 3%;
+  background-color: #f5f5f5;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.gridItem1 {
+  grid-column: span 7;
+  height: 10vh;
+}
+.gridItem2 {
+  grid-column: span 5;
+  height: 10vh;
+}
+.gridItem3 {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+}
+.gridItem4 {
+  grid-column: span 6;
+  height: 20vh;
+}
+
+.card {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: #ffeb3b;
+  text-align: center;
+}
+
+nav {
+  background-color: #4caf50;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+summary {
+  background-color: #2196f3;
+}
+
+summary h2 {
+  color: #fff;
+}
+
+.summary ul {
+  padding-left: 20px;
+}
+
+.sections {
+  background-color: #9c27b0;
+  overflow-y: auto;
+}
+
+.sections section {
+  margin-bottom: 20px;
+}
+
+.sections h3 {
+  color: #fff;
+}
+grid-template-columns: repeat(12,1fr);  /* Une seule colonne */
+grid-template-rows: repeat(4,1fr);  /* Auto pour header, navbar et résumé, 1fr pour sections principales */
+gap: 20px;  /* Espacement entre les cartes */
+padding: 20px;
+comment positionner 4 cards dans un main: un pour le header, un pour une navbar et un pour un résumé des points principaux  et pour un pour les sections principales
+<hr class="styled-hr vertical" />
+<hr class="styled-hr" />
+.styled-hr {
+  width: 98%;
+  border: none; /* Enlève la bordure par défaut */
+  height: 2px; /* Définir l'épaisseur de la ligne */
+  background-color: #172152; /* Couleur de fond de la ligne */
+  margin: 20px center; /* Marges pour espacer */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour effet de profondeur */
+}
+.styled-hr.vertical {
+  position: absolute;
+  top: 0px;
+  right: -15px;
+  width: 2px;
+  border: none; /* Enlève la bordure par défaut */
+  height: 80%; /* Définir l'épaisseur de la ligne */
+  background-color: #172152; /* Couleur de fond de la ligne */
+  margin: 20px center; /* Marges pour espacer */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour effet de profondeur */
+}
+style pour écran 700-1200
+h3,
+h4,
+p,
+li {
+  text-align: left;
+}
+h1 {
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  /* text-shadow: -2px -2px 6px #e0e1f4; */
+  margin: 20px 0px 20px 50px;
+  /* ------------------------- */
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+header h2 {
+  /* letter-spacing: 3px; */
+  font-size: 1rem;
+  /* font-weight: 600; */
+  text-shadow: -0px -0px 0px #e0e1f4;
+  margin: 10px 0px 10px 50px;
+  /* ------------------------- */
+}
+h3 {
+  /* text-align: left; */
+  /* letter-spacing: 3px; */
+  font-size: 1rem;
+  font-weight: 700;
+  /* text-shadow: -6px -6px 12px #e76c31; */
+  /* margin: 10px 30px 10px 30px; */
+  /* ------------------------- */
+}
+
+section p {
+  /* letter-spacing: 1px; */
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 20px 60px 10px 60px;
+}
+
+section h4 {
+  /* letter-spacing: 3px; */
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 20px 50px;
+}
+
+#competenceSection p,
+section ul,
+section li {
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+#competenceSection p {
+  margin: 10px 80px 10px 80px;
+}
+section ul {
+  margin: 10px 50px 10px 70px;
+}
+
+p {
+  letter-spacing: 1px; /*spécifique >1200px*/
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+#contact li {
+  color: #0a0f29;
+  font-size: 0.8rem; /*spécifique >1200px*/
+}
+
+#concernant-cv section li {
+  /* font-weight: 700; */
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  width: 420px;
+  display: block;
+}
+
+img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: auto auto;
+  transform: translate(0, 0);
+  /* transform: translate(calc(-50% * 120px), 0); */
+}
+
+a {
+  text-decoration: none;
+  color: #0a0f29;
+}
+
+#contact {
+  background: rgb(192, 140, 100);
+}
+
+/* remarque ici c'est par rapport à l'élément par rapport au quel il est relative c'est header ici qui mesure 20vh ici */
+
+#apropos {
+  grid-area: li1;
+}
+#cvPDF {
+  grid-area: li2;
+}
+#cvComplet {
+  grid-area: li3;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 3% 3%;
+}
+
+section {
+  width: 100%;
+}
+#contact {
+  width: 100vw;
+  grid-area: contact;
+  background: var(--color-bleu-fonce);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+}
+
+#contact ul {
+  margin: 2px 0px;
+  padding: 0px;
+  display: flex;
+  /* flex direction en une seule colonne flex-direction: column */
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* La propriété CSS justify-content définit la manière dont le navigateur répartit l'espace entre et autour des éléments de contenu le long de l' axe principal d'un conteneur flexible et de l' axe en ligne des conteneurs de grille et multicolonnes. */
+  justify-content: center;
+  text-align: center;
+}
+#contact li {
+  color: #b4b8e4;
+
+  /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+  /* première valeur haut bas et deuxième gauche droite */
+  margin: 5px 0px 5px 0px;
+  font-size: 0.8rem;
+  /* nav button {
+    border: 1px solid #0a0f29;
+    padding: 0.25em 0.5em; /* Padding flexible */
+    font-size: 1rem; /* Taille de police en unité flexible */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 120px; /* Largeur minimale */
+    max-width: 100%; /* Largeur maximale pour s'adapter à l'écran */
+    white-space: nowrap; /* Empêche le texte de se diviser en plusieurs lignes */
+    /* overflow: hidden; Cache tout débordement */
+    /* text-overflow: ellipsis; Ajoute des points de suspension si le texte dépasse */
+    text-align: center;
+  } */
+  <button class="button-type1 orange1">
+    <a href="#aboutMeSection">Profil</a>
+  </button>
+</li>
+<li>
+  <button class="button-type1 orange2">
+    <a href="#aboutMeSection">Atouts</a>
+  </button>
+</li>
+<li>
+  <button class="button-type1 orange3">
+    <a href="#realisation">Réalisations</a>
+  </button>
+</li>
+<li>
+  <button class="button-type1 orange4">
+    <a href="#formations">Formations</a>
+  </button>
+</li>
+<li>
+  <button class="button-type1 orange5">
+    <a href="#experiences">Expériences</a>
+  </button>
+</li>
+
+<li><button class="button-type2 bleu-clair" id="">CV PDF</button></li>
+<li><button class="button-type2 bleu-moyen" id="">CV Complet</button></li>
+<button class="button-type1 orange1">
+  <a href="#aboutMeSection">Profil</a>
+</button>
+</li>
+<li>
+<button class="button-type1 orange2">
+  <a href="#aboutMeSection">Atouts</a>
+</button>
+</li>
+<li>
+<button class="button-type1 orange3">
+  <a href="#realisation">Réalisations</a>
+</button>
+</li>
+<li>
+<button class="button-type1 orange4">
+  <a href="#formations">Formations</a>
+</button>
+</li>
+<li>
+<button class="button-type1 orange5">
+  <a href="#experiences">Expériences</a>
+</button>
+</li>
+
+<li><button class="button-type2 bleu-clair" id="">CV PDF</button></li>
+<li><button class="button-type2 bleu-moyen" id="">CV Complet</button></li>
+
+alignementDroit
+.image-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.image-container img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+  /* transform: translate(calc(-50% * 120px), 0); */
+}
+/* .atout-representation {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+  .atout1,
+  .atout2,
+  .atout3,
+  .atout4,
+  .atout5,
+  .atout6 {
+    position: absolute;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+  
+    font-weight: 700;
+  
+    letter-spacing: 2px;
+    border-radius: 5px; /* Coins arrondis pour un meilleur style */
+
+.atout1 {
+  top: 80px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+.atout2 {
+  top: 45px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+.atout3 {
+  top: 5px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+.atout4 {
+  top: 80px;
+  right: 20%;
+  transform: translateX(50%);
+}
+.atout5 {
+  top: 45px;
+  right: 20%;
+  transform: translateX(50%);
+}
+.atout6 {
+  top: 5px;
+  right: 20%;
+  transform: translateX(50%);
+}
+*/
+    /* .flexDirectionLigne {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .flexDirectionColonne {
+    display: flex;
+    flex-direction: column;
+  } */
+  /* header */
+  .header.alignementgauche {
+  width: 50%;
+  padding: 1%;
+}
+
+.header.alignementdroit {
+  width: 50%;
+  padding: 3%;
+}
+*
+  --------------------------------------par
+  bouton--------------------------------------
+  */
+  .alignementDroit {
+  padding-right: 5%;
+  /* pour gérer l'espace entre les colonnes */
+  padding-left: 20%;
+}
+.alignementgauche {
+  padding-right: 0%;
+  padding-left: 5%;
+}
+/* -------------------------------------------------première division--------------------------------------------- */
+
+.sectionComplete #description {
+  width: 70%;
+}
+.sectionComplete #passions {
+  width: 30%;
+}
+
+/* ----------------------deuxième division------------------------------------------- */
+
+.sectionComplete #strengths {
+  width: 30%;
+}
+.sectionComplete #competence {
+  width: 70%;
+}
+/* ----------------------troisième division------------------------------------------- */
+.sectionComplete #texteRealisation {
+  width: 70%;
+}
+.sectionComplete #imageRealisation {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.sectionComplete #imageRealisation {
+  max-width: 100%;
+  height: auto;
+  padding: 5%;
+}
+/* -------------------------------------------bas de page----------------------------------------- */
+
+/* @media (orientation: portrait) {
+  /* Styles pour le mode portrait */
+
+/* @media (orientation: landscape) {
+  Styles pour le mode paysage
+} */
+function hideDiv() {
+  const sectionsModulables = document.querySelectorAll('.sectionModulable') 
+  sections.forEach (function(section) {
+      section.style.display=none;
+  }}
+//         forEach() : Cette méthode permet de parcourir chaque élément de la NodeList sections. Pour chaque section, une fonction est exécutée, et chaque élément de la liste (une section) est passé comme argument à cette fonction.
+
+// section : C'est l'élément individuel de la NodeList, représentant une section sur la page. À chaque itération, la variable section correspond à une des sections sélectionnées.
+
+
+//         section : C'est l'élément individuel de la NodeList, représentant une section sur la page. À chaque itération, la variable section correspond à une des sections sélectionnées.
+//     const sectionsModulable = document.getElementsByClassName('sectionModulable');
+  // block.style.display = 'none'; // Change le display en "none"
+  
+// style.display === "block" ou getComputedStyleDisplay??
+// element.style
+// Cet objet représente uniquement les styles définis directement en ligne dans l'attribut HTML style.
+// Si vous ajoutez style="display:block" à un élément, ou si vous définissez ce style via JavaScript comme ceci : element.style.display = "block", alors element.style.display aura une valeur.
+// getComputedStyle est nécessaire lorsque vous voulez connaître le style final appliqué à un élément, quelle que soit sa source.
+// La propriété computedStyle n'existe pas sur un élément DOM. Pour obtenir les styles calculés (effectifs) d'un élément, vous devez utiliser la méthode window.getComputedStyle(element).
+// Les styles calculés (obtenus via getComputedStyle) sont en lecture seule. Vous ne pouvez pas les modifier directement. Pour changer le style d’un élément, vous devez utiliser l’attribut element.style.
+// fonction pour avoir le contenu du scroll avec les marges, bordures etc
+// function getTotalHeightWithScroll(element) {
+//   // Hauteur totale du contenu, y compris le contenu masqué
+//   const scrollHeight = element.scrollHeight;
+
+//   // Récupérer les bordures et les marges via getComputedStyle
+//   const style = window.getComputedStyle(element);
+
+//   // Bordures (top et bottom)
+//   const borderTop = parseFloat(style.borderTopWidth);
+//   const borderBottom = parseFloat(style.borderBottomWidth);
+
+//   // Marges (top et bottom)
+//   const marginTop = parseFloat(style.marginTop);
+//   const marginBottom = parseFloat(style.marginBottom);
+
+//   // Calcul de la hauteur totale
+//   const totalHeight =
+//     scrollHeight + borderTop + borderBottom + marginTop + marginBottom;
+
+//   return totalHeight;
+// }
+// function getFullHeight(element) {
+//   // Hauteur de l'élément (y compris padding et bordures)
+//   const offsetHeight = element.offsetHeight;
+
+//   // Calcul des marges : récupérées via getComputedStyle
+//   const style = window.getComputedStyle(element);
+
+//   // Marges supérieure et inférieure
+//   const marginTop = parseFloat(style.marginTop);
+//   const marginBottom = parseFloat(style.marginBottom);
+
+//   // Hauteur totale = contenu + bordures + marges
+//   const fullHeight = offsetHeight + marginTop + marginBottom;
+
+//   return fullHeight;
+// }
+Votre code JavaScript semble avoir pour but d'adapter le comportement et le style d'une page en fonction de la taille de la fenêtre du navigateur (réactif ou responsive design). Cependant, il y a quelques améliorations et ajustements que vous pourriez faire pour rendre ce code plus propre, plus compréhensible et éviter certains comportements indésirables.
+
+Voici une analyse et des suggestions pour chaque fonction de votre code :
+
+1. checkOverflow :
+Votre fonction checkOverflow vérifie si le contenu dépasse la hauteur d'un conteneur, mais elle contient quelques incohérences :
+
+Le message console.log("Le contenu dépasse pasla hauteur de la fenêtre."); semble être mal formulé. Vous devriez plutôt dire "Le contenu dépasse la hauteur de la fenêtre" si c'est le cas.
+Vous utilisez setTimeout avec un délai de 0, ce qui est inutile ici car cela va simplement différer l'exécution du code d'un tout petit instant, ce qui n'ajoute pas de valeur.
+Refactorisation suggérée :
+javascript
+Copier le code
+function checkOverflow() {
+  const cardContainer = document.getElementById("cardContainer2");
+  const useHeight = cardContainer.clientHeight;
+  const totalHeight = cardContainer.scrollHeight;
+
+  if (useHeight < totalHeight) {
+    console.log("Le contenu dépasse la hauteur du conteneur.");
+    cardContainer.classList.add("scrollable"); // Ajoutez la classe scrollable pour indiquer que le contenu dépasse
+  }
+}
+2. sectionVisibleDeBase :
+Cette fonction semble ajouter des classes pour afficher ou masquer certaines sections en fonction de la présence de la classe visibleDeBase. Le code est correct, mais voici une version plus concise en utilisant forEach directement sur un tableau si nécessaire.
+
+Refactorisation suggérée :
+javascript
+Copier le code
+function sectionVisibleDeBase() {
+  const sectionsModulables = document.querySelectorAll(".sectionModulable");
+
+  sectionsModulables.forEach(function (section) {
+    if (section.classList.contains("visibleDeBase")) {
+      section.classList.add("displayBlock");
+      section.classList.remove("displayNone");
+    } else {
+      section.classList.add("displayNone");
+      section.classList.remove("displayBlock");
+    }
+  });
+}
+3. hideElementOfDiv :
+Cette fonction cache toutes les sections de type classToHide dans un conteneur div. Le principe est bon, mais l'ajout de la classe displayNone pourrait être simplifié.
+
+Refactorisation suggérée :
+javascript
+Copier le code
+function hideElementOfDiv(div, classToHide) {
+  const sectionsModulables = div.querySelectorAll("." + classToHide);
+
+  sectionsModulables.forEach(function (section) {
+    const style = getComputedStyle(section);
+    if (style.display !== "none") {
+      section.classList.add("displayNone");
+    }
+  });
+}
+Cette fonction est déjà bien structurée, donc pas de gros changements à apporter ici.
+
+4. hideArea :
+La fonction hideArea cache un élément spécifique (par son ID) en lui ajoutant la classe displayNone. Elle est correcte, mais encore une fois, il serait bien de vérifier que l'élément existe avant de manipuler son style.
+
+Refactorisation suggérée :
+javascript
+Copier le code
+function hideArea(area) {
+  const areaModulables = document.querySelector("#" + area);
+  if (areaModulables) {
+    areaModulables.classList.add("displayNone");
+  } else {
+    console.error("L'élément avec l'ID '" + area + "' n'a pas été trouvé.");
+  }
+}
+Cette fonction est correcte, mais nous avons ajouté une petite vérification pour s'assurer que l'élément est bien trouvé avant d'essayer de modifier son style.
+
+5. showArea :
+La fonction showArea affiche un élément en ajoutant la classe displayBlock. Elle semble correcte, mais on peut la rendre plus robuste en vérifiant également si l'élément existe.
+
+Refactorisation suggérée :
+javascript
+Copier le code
+function showArea(area) {
+  const areaModulables = document.querySelector("." + area);
+  if (areaModulables) {
+    areaModulables.classList.add("displayBlock");
+  } else {
+    console.error("L'élément avec la classe '" + area + "' n'a pas été trouvé.");
+  }
+}
+6. addContentToArea1 :
+Cette fonction copie le contenu d'un autre élément (ID contact et infoImportante) dans un autre conteneur (idCard1). Vous avez un petit problème avec la création des sections cardSection, elles sont actuellement créées comme des éléments génériques cardSection, mais il semble que vous vouliez les créer comme des éléments HTML valides.
+
+Refactorisation suggérée :
+javascript
+Copier le code
+function addContentToArea1() {
+  const card = document.getElementById("idCard1");
+  card.innerHTML = "";  // Réinitialise le contenu de la carte
+
+  const cardSection = document.createElement("section");
+  const cardSection2 = document.createElement("section");
+
+  cardSection.innerHTML = document.getElementById("contact").innerHTML;
+  cardSection2.innerHTML = document.getElementById("infoImportante").innerHTML;
+
+  card.appendChild(cardSection);
+  card.appendChild(cardSection2);
+}
+7. changeSizeArea :
+Cette fonction permet de changer la largeur d'une zone en ajustant ses classes, mais il serait plus pratique de refactorer pour éviter d'appeler querySelector deux fois pour la même classe.
+
+Refactorisation suggérée :
+javascript
+Copier le code
+function changeSizeArea(area) {
+  const element = document.querySelector("." + area);
+  if (element) {
+    element.classList.remove("normalWidth");
+    element.classList.add("smallScreenWidth");
+  } else {
+    console.error("L'élément avec la classe '" + area + "' n'a pas été trouvé.");
+  }
+}
+8. adaptAreaSmallScreen & adaptAreaHideScreen :
+Ces fonctions servent à adapter la mise en page selon la taille de l'écran. Celles-ci semblent correctes, mais une meilleure gestion des classes et une plus grande modularité peut rendre votre code plus flexible.
+
+Refactorisation suggérée pour adaptAreaSmallScreen :
+javascript
+Copier le code
+function adaptAreaSmallScreen() {
+  hideArea("modularArea2");
+  showArea("modularArea1");
+  changeSizeArea("modularArea1");
+  
+  // Exemple pour afficher les sections
+  showSection("aboutMeSections");
+  showSection("competences");
+  showSection("realisations");
+  showSection("formations");
+  showSection("experiences");
+}
+9. updateStylesForScreenSize :
+Cette fonction adapte la mise en page en fonction de la largeur de la fenêtre. Le code est correct, mais il pourrait être un peu plus propre avec des noms de classes clairs et plus de modularité.
+
+Refactorisation suggérée :
+javascript
+Copier le code
+function updateStylesForScreenSize() {
+  const width = window.innerWidth;
+  console.log(`Largeur actuelle de la fenêtre : ${width}`);
+  const navBar = document.getElementById("navBar");
+  const sideBar = document.getElementById("sideBar");
+  const buttons = navBar.querySelectorAll("button");
+
+  if (width <= 1000) {
+    adaptAreaSmallScreen();
+    buttons.forEach(button => sideBar.querySelector("ul").appendChild(button));
+    console.log("Écran petit (moins de 1000px) : adaptation en cours.");
+  } else {
+    adaptAreaHideScreen();
+    buttons.forEach(button => navBar.querySelector("ul").appendChild(button));
+  }
+}
+Conclusion :
+Le code de base est solide, mais il y a des points où la gestion des erreurs, l'optimisation de la sélection d'éléments et la modularité des fonctions peuvent être améliorées. En appliquant ces refactorisations, vous rendrez le code plus propre, plus maintenable et moins sujet aux erreurs, tout en garantissant une meilleure performance.
+  /* display: flex;
+  flex-direction: column; */
+
+  /* display: flex;
+  flex-direction: column; */
+  <li><button id="printButton" class="button-type2 bleu-clair" id=""><svg class="icone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/>CV</svg></button></li>
+
+
+  document.querySelectorAll(".hideModularArea1").forEach((element) => {
+    element.addEventListener("click", function () {
+      hideArea("modularArea1");
+    });
+  });
+  // Pour tous les éléments ayant la classe "hideModularArea2"
+  document.querySelectorAll(".hideModularArea2").forEach((element) => {
+    element.addEventListener("click", function () {
+      hideArea("modularArea2");
+    });
+  });
+  document.querySelectorAll(".showModularArea1").forEach((element) => {
+    element.addEventListener("click", function () {
+      showArea("modularArea1");
+    });
+  });
+  document.querySelectorAll(".showModularArea2").forEach((element) => {
+    element.addEventListener("click", function () {
+      showArea("modularArea2");
+    });
+  });
+  /* ---------------------------------------------structure card1-------------------------------------------- */
+  /* overflow: hidden; */
+  /* .cardContent {
+    background-color: #f5f5f5;
+    padding: 5px;
+  } */
+  /* pour le header qui est la carte 1 */
+  /* card container entourant toutes les cards */
+  
+  /* ----------------------------------------------------------------------------------------------------- */
+  
+  /* .nav-bar1 {
+    margin: 0% auto 0% auto;
+    width: 10%;
+    position: absolute;
+    background: #3b4694;
+    top: -50px;
+    transition: 0.5s ease-out;
+    z-index: 4;
+  } */
+  /* --------------style pour les éléments html (balises)---------------- */
+  /* couleur des éléments */
+  /* .mainContent {
+    width: 100%;
+    background: var(--color-bleu-fonce);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+  /* text-align: center; Centre le texte dans le conteneur
+    gap: 3px;
+  } */
+  /* ajuster la marge pour l'esthétisme peut permettre de centrer notre main en largeur mais aussi de le déplacer verticalement */
+  /* première valeur haut bas et deuxième gauche droite */
+  /* solution complète document html (16 px si largeur d'écran 1000px et sinon 18 px),
+  titre clamp  */
+  /* Les 4% sont retranché aux cent pour cent */
+  
+  /* #idCard1 {
+    height: 40vh;
+  } */
+  /* .cardContainer2::after {
+    content: "";
+    width: 40%;
+    height: 5%;
+    background-color: #f09a45;
+    top: 20%;
+    left: 1%;
+  } */
+  /* section h3::after {
+    position: absolute;
+    content: "\002B";
+    margin-left: 15px;
+    margin-top: auto;
+  
+    font-size: 16px;
+  } */
+  /* align-items: flex-start; /* Aligne les éléments en haut */
+  /* justify-content: space-between; Espacement égal entre les éléments */
+  /* justify-content: space-between; */
+  /* #additionalInfo {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  #infoImportante ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+  /* padding: 0px;
+    justify-content: left; */
+  
+  /* #infoImportante li {
+    color: var(--color-gris-bleute);
+    text-align: left;
+    padding: 5px 10px;
+  } */
+  
+  function adaptAreaSmallScreen() {
+    hideArea("modularArea2");
+   showArea("modularArea1");
+   changeSizeArea("modularArea1");
+   showSection(aboutMeSections);
+   showSection(competences);
+   showSection(realisations);
+   showSection(formations);
+   //   showSection(experiences);
+   
+   function adaptAreaHideScreen() {
+    showArea("modularArea1");
+   document.querySelector("#modularArea1").classList.add("normalwidthArea1");
+   showArea("modularArea2");
+   document.querySelector("#modularArea2").classList.add("normalwidthArea2");
+   // }
+   function addContentToArea1() {
+    const card = document.getElementById("idCard1");
+    cardContent = card.innerHTML;
+    const cardSection = document.createElement("cardSection");
+    const cardSection2 = document.createElement("cardSection");
+    card.innerHTML = "";
+    cardSection.innerHTML = document.getElementById("contact").innerHTML;
+    card.appendChild(cardSection);
+    cardSection2.innerHTML = document.getElementById("infoImportante").innerHTML;
+    card.appendChild(cardSection2);
+  }
+  function hideArea(areaId) {
+    document.getElementById(areaId).classList.add("hidden"); // Ajoute une classe 'hidden' pour masquer l'élément
+  }
+  
+  // Fonction pour afficher une zone
+  function showArea(areaId) {
+    document.getElementById(areaId).classList.remove("hidden"); // Retire la classe 'hidden' pour afficher l'élément
+  }
+  // const modularArea2 = document.getElementById("modularArea2");
+// const modularArea1 = document.getElementById("modularArea1");
+
+
+
+
+
+// Pour tous les éléments ayant la classe "hideModularArea1"
+// document.querySelectorAll(".versContact").forEach((element) => {
+//   element.addEventListener("click", function () {
+//     const target = document.getElementById("footer");
+//     target.scrollIntoView({ behavior: "smooth" }); // Défilement fluide
+//   });
+// });
+// Fonction pour cacher une zone
+function revealSectionOnly(sectionId) {
+  // Cache toutes les sections et affiche seulement celle sélectionnée
+  const sections = document.querySelectorAll('.sectionModulable'); // Toutes les sections avec cette classe
+  sections.forEach((section) => {
+    section.classList.add('displayNone'); // Cache toutes les sections
+    section.classList.remove('displayBlock');
+  });
+  // Affiche uniquement la section demandée
+  const sectionToDisplay = document.getElementById(sectionId);
+  sectionToDisplay.classList.remove('displayNone');
+  sectionToDisplay.classList.add('displayBlock');
+}
+
+
+
+/* .atout1,
+.atout2,
+.atout3,
+.atout4,
+.atout5,
+.atout6 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.atout1 {
+  position: absolute;
+  top: 70%;
+  left: 2%;
+}
+.atout2 {
+  position: absolute;
+  top: 80%;
+  left: 2%;
+}
+.atout3 {
+  position: absolute;
+  top: 90%;
+  left: 2%;
+}
+.atout4 {
+  position: absolute;
+  top: 70%;
+  right: 2%;
+}
+.atout5 {
+  position: absolute;
+  top: 80%;
+  right: 2%;
+}
+.atout6 {
+  position: absolute;
+  top: 90%;
+  right: 2%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <header>
+    <div>
+      <div
+        class="itemHeader"
+        id="content">
+        <h1 class="blanc-bleu fontSizeHeaderh1">Stéphanie Marquant</h1>
+
+        <h2 class="blanc-bleu fontSizeHeaderh2">Développeuse front end</h2>
+        <h3 class="blanc-bleu fontSizeHeaderh3">En cours de formation</h3>
+      </div>
+      <!-- petit écran<1000 -->
+        <!-- Navigation mobile (petit écran) -->
+      <div class="smallscreen infosEtNav">
+       
+          <!-- Menu mobile -->
+        <nav id="sideBar">
+          <ul>
+            <div class="toggle-btn" id="btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </ul>
+          <div id="contentSideBar">
+            <ul>
+              <li><button class="hideModularArea2">Points Clé</button></li>
+              <li><button class="hideModularArea1">Profil Complet</button></li>
+              <li><button class="hideModularArea1"id="buttonAboutMe" aria-label="Afficher la section Qui suis-je?">Qui suis-je?</button></li>
+              
+              <li><button class="hideModularArea1"id="buttonCompetences"role="button" aria-label="Afficher la section compétence">Compétences</button></li>
+              <li> <button class="hideModularArea1"id="buttonRealisations" role="button" aria-label="Afficher la section réalisation">Réalisations</button></li>
+              <li > <button class="hideModularArea1"id="buttonFormations" role="button" aria-label="Afficher la section formations"> Formations</button></li>
+              <li ><button class="hideModularArea1"id="buttonExperiences"role="button" aria-label="Afficher la section expériences">Expériences</button></li>
+              <li><button class="versContact">Téléchargements</button></li>
+            </ul>
+
+          </div>
+        </nav>
+    
+      </div>
+      <!-- normal screen >1000 -->
+      <div class="normalScreen infosEtNav">
+        <!-- menu normal -->
+        <nav class="positionAbsolute with-margin-right " id="navBar">
+          <ul class="flexDirectionLigne ">
+
+            <li>
+              <button class="bleu-clair" id="buttonAboutMe">
+                Qui suis-je?
+              </button>
+            </li>
+            <li>
+              <button class="bleu-clair" id="buttonCompetences">
+                compétences
+              </button>
+            </li>
+            <li>
+              <button class="bleu-clair" id="buttonRealisations">
+              Réalisations
+              </button>
+            </li>
+            <li>
+              <button class="bleu-clair" id="buttonFormations"> 
+              Formations
+              </button>
+            </li>
+            <li>
+              <button class="bleu-clair"id="buttonExperiences">
+              Expériences
+              </button>
+            </li>
+            <li><button class="button-type2 bleu-clair" id="buttoncvComplet">Profil Complet</button></li>
+    
+          </ul>
+        </nav>
+      </div>
+      <!-- Barre latérale -->
+
+      <!-- Titre principaux -->
+    </div>
+  </header>

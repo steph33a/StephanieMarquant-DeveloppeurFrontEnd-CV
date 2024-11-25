@@ -1,0 +1,62 @@
+développement de mon cv sous forme d'un site web one-page interactive et fluide
+
+J'ai conçu une interface web one-page réactive sans utiliser de CMS, en mettant l'accent sur une expérience utilisateur fluide sur tous les appareils. L'interface s'ajuste dynamiquement selon la taille de l'écran et les actions de l'utilisateur. J'ai utilisé JavaScript et CSS avancé pour garantir une navigation claire et une réactivité optimale.
+
+Compétences clés :
+
+JavaScript : Manipulation du DOM et gestion des événements pour des interactions dynamiques (tels que affichage ou masquage de section)
+CSS : Mise en page flexible (clamp, flexBox), gestion des classes dynamiques et mediaqueries
+Gestion des événements : Utilisation de addEventListener pour des interactions utilisateur fluides
+Responsive Design : Adaptation de l'interface grace à l'ensemble des techniques pour une expérience cohérente sur tous les écrans
+/* Fonctionnement de scroll-behavior: smooth;
+Quand un utilisateur clique sur un lien qui pointe vers une ancre (comme #section1), le navigateur effectue normalement un défilement immédiat vers la position de l'élément cible. Avec scroll-behavior: smooth;, au lieu de faire défiler immédiatement la page, le navigateur effectue un défilement progressif et fluide, comme si la page se déplaçait lentement pour atteindre l'élément cible. */
+/* }
+.roboto-thin {
+  
+  font-weight: 100;
+ 
+}
+
+.roboto-light {
+
+  font-weight: 300;
+
+}
+
+.roboto-regular {
+
+  font-weight: 400;
+
+}
+
+.roboto-medium {
+
+  font-weight: 500;
+
+}
+
+.roboto-bold {
+
+  font-weight: 700;
+
+}
+
+.roboto-black {
+
+  font-weight: 900;
+
+}*/
+/* -----général-------*/
+/* .no-scroll {
+  overflow-y: hidden;
+}
+.scrollable {
+  overflow-y: auto;
+} */
+/* Le conteneur défilable doit avoir une hauteur maximale */
+
+/* Utilisez overflow-y: auto au lieu de overflow-y: scroll. Cela ajoutera la barre de défilement uniquement si nécessaire (si le contenu dépasse la hauteur de l'élément). */
+/* Activer le défilement si nécessaire (via JavaScript) */
+
+
+
