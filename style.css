@@ -3,10 +3,9 @@ html {
 }
 
 :root {
-  --viewport-height: 100vh; /* Hauteur du viewport */
+  --viewport-height: 100vh;
   --viewport-width: 100vw;
   --header-width: 100vw;
-  --total-height: 100vh;
   --color-orange-fonce: #f09a45;
   --color-orange-clair: #fbd3a0;
   --color-bleu-moyen: #4668a7;
@@ -16,12 +15,7 @@ html {
 }
 
 /* ------------------elément commun et classe générales--------------------------------------- */
-/* structure de sections */
-/* html,body{
- margin:0; */
-/* padding:0; 
- box-
-} */
+
 * {
   /* Utilisez box-sizing: border-box pour inclure le padding et les bordures dans la largeur totale des éléments. */
   box-sizing: border-box;
@@ -65,10 +59,6 @@ body {
 a {
   text-decoration: none;
 }
-/* section {
-  display: flex;
-  flex-direction: column;
-} */
 
 .flexDirectionLigne {
   width: 100%;
@@ -81,8 +71,6 @@ a {
 .flexDirectionColonne {
   display: flex;
   flex-direction: column;
-  /* margin: 0% auto;
-  gap: 0rem; */
 }
 /* -au niveau du style (couleur , caractère)- */
 .card {
@@ -95,27 +83,21 @@ a {
 }
 
 .textorange {
-  /* background-color: #fbd3a0; */
   color: var(--color-orange-fonce);
 }
 .nuance1 {
-  /* background-color: #fbd3a0; */
   color: #fbd3a0;
 }
 .nuance2 {
-  /* background-color: #f5b56d; */
   color: #f5b56d;
 }
 .nuance3 {
-  /* background-color: #f09a45; */
   color: #f09a45;
 }
 .nuance4 {
-  /* background-color: #d87c2d; */
   color: #d87c2d;
 }
 .nuance5 {
-  /* background-color: #a95a1e; */
   color: #a95a1e;
 }
 .grisFonce {
@@ -128,21 +110,7 @@ a {
   fill: #333333;
   width: 20px;
 }
-.orange1 {
-  background-color: #fbd3a0;
-}
-.orange2 {
-  background-color: #f5b56d;
-}
-.orange3 {
-  background-color: #f09a45;
-}
-.orange4 {
-  background-color: #d87c2d;
-}
-.orange5 {
-  background-color: #a95a1e;
-}
+
 .blanc-bleu {
   color: var(--color-gris-bleute);
 }
@@ -150,9 +118,6 @@ a {
   color: var(--color-gris-bleute);
 }
 
-.bleu-moyen {
-  background: var(--color-bleu-moyen);
-}
 .bleuFonceTexte {
   color: var(--color-bleu-fonce);
 }
@@ -215,17 +180,41 @@ li {
 .alignItemCenter {
   align-items: center;
 }
-
-/* -------------------------------------font-------------------------------- */
-
-/* -----------style par défaut--------------------------------------------- */
-
+.wordWrap {
+  word-wrap: break-word;
+}
+.noWordWrap {
+  white-space: nowrap;
+}
+.weight300 {
+  font-weight: 300;
+}
+strong {
+  font-weight: 600;
+}
+.smallscreen {
+  display: none;
+}
+.style1 {
+  font-size: clamp(16px, 1.2em, 18px);
+  color: #333333;
+  font-weight: 500;
+}
+.iconeLarge {
+  width: 100px;
+  height: auto;
+}
+.decalage1em {
+  margin-left: 1em;
+}
+.card li {
+  color: #333333;
+}
 /* ----------------------------------------structure générale,format des card-------------------------- */
 header {
   position: relative;
   background-color: var(--color-bleu-fonce);
   padding: 0% 0% 0% 0%;
-  /* padding: 2% ; */
   text-align: center;
   width: 100%;
   height: clamp(250px, 28vh, 400px);
@@ -241,6 +230,16 @@ header li {
   font-size: clamp(16px, 2em, 18px);
 }
 /* -----------------contact---------------------- */
+#contact.smallscreen {
+  display: none;
+}
+.smallScreen.infosEtNav {
+  display: none;
+}
+
+.infosEtNav.hideScreen {
+  display: block;
+}
 #contacts {
   display: block;
   position: absolute;
@@ -248,7 +247,6 @@ header li {
   right: 0%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   padding: 0px;
 }
 #contacts ul {
@@ -272,8 +270,8 @@ header li {
 #navBarHideScreen {
   position: absolute;
   display: block;
-  bottom: 10%; /* Centre verticalement par rapport au parent */
-  left: 50%; /* Centre horizontalement par rapport au parent */
+  bottom: 10%;
+  left: 50%;
   transform: translate(-50%, 0%);
 }
 nav ul {
@@ -294,6 +292,12 @@ nav ul {
   list-style: none;
   padding-inline-start: 0px;
 }
+#navBarSpecialSmallScreen {
+  display: none;
+}
+#navBarSpecialHideScreen {
+  display: block;
+}
 nav li {
   margin-bottom: 0em;
 }
@@ -304,8 +308,6 @@ nav li button {
   white-space: nowrap;
   font-family: "Roboto", sans-serif;
   font-size: clamp(14px, 1.5em, 16px);
-
-  /* margin: 0% 4% 0% 4%; */
 }
 
 #navBarHideScreen li button {
@@ -331,9 +333,14 @@ nav ul li button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.infosEtNav.hideScreen {
-  display: block;
+.toggle-btn {
+  display: none;
 }
+
+#sideBar {
+  display: none;
+}
+
 .identite {
   width: 150px;
   height: auto;
@@ -343,23 +350,11 @@ nav ul li button:hover {
   padding-bottom: 3%;
   padding-top: 3%;
 }
-/* transform: translate(-50%, 0%); */
+
 .paddingIdentite {
   padding-right: 50%;
   padding-left: 50%;
 }
-.style1 {
-  font-size: clamp(16px, 1.2em, 18px);
-  color: #333333;
-  font-weight: 500;
-}
-
-.weight300 {
-  font-weight: 300;
-}
-/* .paddingIdentite h3 {
-  color: ;
-} */
 
 nav #sideBar {
   display: none;
@@ -367,9 +362,7 @@ nav #sideBar {
 .toggle-btn {
   display: none;
 }
-.smallscreen {
-  display: none;
-}
+
 div.telechargement {
   display: inline-block;
   position: absolute;
@@ -377,7 +370,6 @@ div.telechargement {
   left: 0%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   padding: 0px;
 }
 div.telechargement {
@@ -390,10 +382,6 @@ div.telechargement {
   width: 20%;
 }
 
-.iconeLarge {
-  width: 100px;
-  height: auto;
-}
 #contact ul {
   line-height: 50em;
 }
@@ -419,23 +407,14 @@ main {
   display: flex;
   flex-direction: row;
   padding: 3%;
-  /* gap: calc(15px + 1%); */
+
   gap: min(3%, 25px);
-  /* gap: 1.5rem;  */
-  /* padding: 2%; */
-  /* gap: 2vw; */
+
   margin-top: 1%;
   justify-content: space-evenly;
   flex-grow: 1;
   color: #333333;
-  /* box-sizing: border-box; */
 }
-.card li {
-  color: #333333;
-}
-/* .cardContainerAside {
-  max-height: 65vh;
-  /* width: clamp(200px, 30vw, 400px); */
 
 #modularArea1.normalWidth {
   width: min(35%, 400px);
@@ -450,20 +429,12 @@ main {
   padding-left: clamp(20px, 1em, 50px);
   padding-right: clamp(20px, 1em, 50px);
   color: #333333;
-  /* padding-top: clamp(1px, 0.2em, 20px);
-  padding-bottom: clamp(1px, 0.2em, 20px); */
 }
-footer {
-  padding: 2%;
-}
+
 .cardContainerAside li {
   text-align: center;
   font-size: clamp(16px, 1.2em, 18px);
 }
-
-/* -------------------------------- structure des cardContainerSecondaire qui reprend card2+3---------------------------------------------------- */
-
-/* ------------------------------------------------------main------------------------------------ */
 
 #modularArea2.normalWidth {
   width: 60%;
@@ -475,12 +446,9 @@ footer {
 
 .cardContainer2 h2,
 .cardContainerAside h2 {
-  /* niveau de gras */
   font-size: clamp(20px, 2em, 26px);
   font-weight: 700;
   text-transform: uppercase;
-  /* margin Espace à coté et sous l'élément */
-  /* margin: 3% 0%; */
 }
 .cardContainer2 h3 {
   font-size: clamp(18px, 2em, 26px);
@@ -500,22 +468,11 @@ footer {
   margin-block-start: 1.2em;
   margin-block-end: 1.2em;
 }
-#modularArea1 h5 {
-  font-size: clamp(18px, 1.2em, 20px);
-  font-weight: 600;
-}
-
-.decalage1em {
-  margin-left: 1em;
-}
 
 #formations h4 center .passion {
   font-size: clamp(1rem, 1em, 1.2rem);
 }
-/* section h3 {
-  font-size: clamp(1rem, 1em, 1.2rem);
-  margin-left: 0%;
-} */
+
 #containerBody {
   width: 100%;
   height: 100%;
@@ -523,9 +480,7 @@ footer {
 .cardContainer2 li {
   font-weight: 500;
 }
-strong {
-  font-weight: 600;
-}
+
 .cardContainer2 li .puce {
   list-style: circle;
 }
@@ -574,34 +529,16 @@ p {
   z-index: 0;
   margin: 5% auto 5% auto;
   border-radius: 10px;
-  /* à voir */
 }
 img {
-  /* width: 100%; */
   width: 100%;
-  height: 100%; /* L'image occupe toute la hauteur */
+  height: 100%;
   object-fit: cover;
-  /* height: auto; */
+
   margin: auto auto;
   z-index: 1;
-  border-radius: 10px; /* Bordure arrondie de l'image */
-  /* transform: translate(0, 0); */
-  /* transform: translate(calc(-50% * 120px), 0); */
+  border-radius: 10px;
 }
-/* .overlayLarge {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
-  height: max(40%, 50px);
-  width: 100%;
-  z-index: 10;
-  bottom: 0;
-  left: 0%;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom-left-radius: 10px; /* Ajoute des bords arrondis à l'overlay */
-/* border-bottom-right-radius: 10px; */
 
 .card .image-container .overlayLarge ul {
   position: absolute;
@@ -622,20 +559,14 @@ img {
   font-weight: 700;
 }
 .card .image-container ul .textOverlay {
-  /* Ajuste l'élément pour qu'il soit exactement centré */
-  color: white; /* Couleur du texte */
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Optionnel : Ombre du texte pour améliorer la lisibilité */
-  text-align: center; /* Centrer le texte */
+  color: white;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  text-align: center;
   font-size: clamp(16px, 1.4vw, 20px);
 }
 .card .image-container ul :hover {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Augmentation de la transparence du fond au survol */
-  transform: scale(1.2); /* Effet d'agrandissement sur le survol */
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.2);
 }
 
 a {
@@ -653,7 +584,7 @@ a {
 
 ul,
 li {
-  line-height: 1.8rem; /* Espacement plus large entre les éléments */
+  line-height: 1.8rem;
   padding-inline-start: 0px;
 }
 h2 {
@@ -662,10 +593,10 @@ h2 {
 h2,
 h3 {
   margin-top: 1rem;
-  margin-bottom: 1rem; /* Espacement sous les en-têtes */
+  margin-bottom: 1rem;
 }
 .cardContainer2 {
-  gap: 1.5rem; /* Plus d'espace entre les éléments */
+  gap: 1.5rem;
 }
 section {
   padding: 0 2%;
@@ -679,74 +610,9 @@ section {
 footer {
   display: block;
 }
-.wordWrap {
-  word-wrap: break-word;
+footer {
+  padding: 2%;
 }
-.noWordWrap {
-  white-space: nowrap;
-}
-#experiencesSection ul {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-}
-
-/* ------------------------------------------------------barre de séparations utilisés dans tout le document-------------------------------------------------- */
-
-hr {
-  border-top: 3px solid #0a0f29; /* Ajouter une bordure supérieure */
-  width: 80%;
-  max-width: 960px; /* Ajuster la largeur de la ligne */
-  margin: 20px auto; /* Centrer la ligne et ajouter un peu d'espace autour */
-  border: none;
-}
-#navBarSpecialSmallScreen {
-  display: none;
-}
-#navBarSpecialHideScreen {
-  display: block;
-}
-/*-------------------------------- effets et interractions--------------------------- */
-
-/* transition */
-header,
-section,
-main {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-a:focus,
-button:focus {
-  outline: 2px solid var(--color-orange-foncé);
-}
-.pop-up {
-  position: fixed;
-  right: 1rem;
-  bottom: 2rem;
-  height: 250px;
-  width: 520px;
-  text-align: center;
-  background: var(--color-bleu-fonce);
-  border-radius: 76% 24% 90% 10%/ 20% 85% 15% 80%;
-  box-shadow: 0 5px 10px var(--color-bleu-clair);
-  opacity: 0;
-  transform: translateX(400px);
-}
-
-#contact.smallscreen {
-  display: none;
-}
-.smallScreen.infosEtNav {
-  display: none;
-}
-
-.toggle-btn {
-  display: none;
-}
-
-#sideBar {
-  display: none;
-}
-
 #footerContent {
   justify-content: space-evenly;
 }
@@ -770,3 +636,44 @@ footer a {
   display: flex;
   flex-direction: row;
 }
+
+#experiencesSection ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+/* ------------------------------------------------------barre de séparations utilisés dans tout le document à voir-------------------------------------------------- */
+
+hr {
+  border-top: 3px solid #0a0f29;
+  width: 80%;
+  max-width: 960px;
+  margin: 20px auto;
+  border: none;
+}
+
+/*-------------------------------- effets et interractions--------------------------- */
+
+header,
+section,
+main {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* a:focus,
+button:focus {
+  outline: 2px solid var(--color-orange-foncé);
+}
+.pop-up {
+  position: fixed;
+  right: 1rem;
+  bottom: 2rem;
+  height: 250px;
+  width: 520px;
+  text-align: center;
+  background: var(--color-bleu-fonce);
+  border-radius: 76% 24% 90% 10%/ 20% 85% 15% 80%;
+  box-shadow: 0 5px 10px var(--color-bleu-clair);
+  opacity: 0;
+  transform: translateX(400px);
+} */

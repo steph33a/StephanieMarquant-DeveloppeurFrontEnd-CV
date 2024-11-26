@@ -1,21 +1,75 @@
 function sectionVisibleDeBase() {
+  // fonction qui affiche uniquement la section visible de base au chargement de la page
   const sectionsModulables = document.querySelectorAll(".sectionModulable");
   sectionsModulables.forEach(function (section) {
     console.log(section + "displayBlock");
-    // Vérifie si la section a la classe "visible"
+
     if (section.classList.contains("visibleDeBase")) {
       section.classList.add("displayBlock");
-      console.log(section + "displayBlock"); // Affiche la section si elle a la classe "visible"
+      console.log(section + "displayBlock");
       section.classList.remove("displayNone");
     } else {
-      section.classList.add("displayNone"); // Cache les autres sections
+      section.classList.add("displayNone");
       section.classList.remove("displayBlock");
       console.log(section + "displayNone");
     }
   });
 }
+function changeSizeAreaToSmall(area) {
+  // fonction qui gére la taille des area ( division principales du main ici)
+  document.querySelector("#" + area).classList.remove("normalWidth");
+  document.querySelector("#" + area).classList.add("smallScreenWidth");
+}
+// ----------------------fonctionne
+function adaptAreaSmallScreen() {
+  // fonction qui gére l'adaptation aux petits écrans
+  const mainContainer = document.getElementById("main");
+  mainContainer.style.flexDirection = "column";
+  showArea("modularArea1");
+  showArea("modularArea2");
+  changeSizeAreaToSmall("modularArea1");
+  changeSizeAreaToSmall("modularArea2");
+  showArea("modularAreaSmallScreen");
+  revealAllSections();
+  // -------enlever la photo qui se trouve dans modularAreaSmallScreen mnt--
+  document.querySelector("#imgIdentiteProfil").classList.remove("displayBlock");
+  document.querySelector("#imgIdentiteProfil").classList.add("displayNone");
+}
+// code ok
+// code ok
+function adaptAreaHideScreen() {
+  // fonction qui gère l'adaptation aux grands écrans
+  const mainContainer = document.getElementById("main");
+  mainContainer.style.flexDirection = "row";
+  console.log(adaptAreaHideScreen);
+  showArea("modularArea1");
+  hideArea("modularAreaSmallScreen");
+  document.querySelector("#modularArea1").classList.remove("smallScreenWidth");
+  document.querySelector("#modularArea1").classList.add("normalWidth");
+  showArea("modularArea2");
+  document.querySelector("#modularArea2").classList.remove("smallScreenWidth");
+  document.querySelector("#modularArea2").classList.add("normalWidth");
+  console.log("finadaptAreaHideScreen");
+  // ---------------------------rajouter la photo car modularAreaSmallScreen enlevee--
+  document.querySelector("#imgIdentiteProfil").classList.remove("displayBlock");
+  document.querySelector("#imgIdentiteProfil").classList.add("displayNone");
+}
+function updateStylesForScreenSize() {
+  // fonction qui permet de gérer le Responsive via l'appel de fonctions par rapport à certaines conditions
+  const width = window.innerWidth;
+  console.log(`Largeur actuelle de la fenêtre : ${width}`);
+  if (width >= 0 && width <= 1000) {
+    // Les area ici sont le résumé et le contenu container à coté
+    adaptAreaSmallScreen();
+    console.log("Écran petit (moins de 1000px) : adaptation en cours.");
+  } else {
+    adaptAreaHideScreen();
+    console.log("adaptAreaHideScreen");
+  }
+}
 
 function hideElementOfDiv(area, classToHide) {
+  // fonction qui cache tous les éléments ayant une certaine class dans une partie bien défini (area)
   const areadiv = document.querySelector("#" + area);
   console.log("hideElementofDiv");
   if (!areadiv) {
@@ -38,6 +92,7 @@ function hideElementOfDiv(area, classToHide) {
 }
 
 function hideArea(area) {
+  // fonction qui cache une area entière (division)
   const areaModulables = document.querySelector("#" + area);
   if (areaModulables) {
     console.log(area + "displayNone");
@@ -55,11 +110,17 @@ function hideArea(area) {
   console.log("hideArea");
 }
 // .........................fonctionne
-function changeSizeAreaToSmall(area) {
-  document.querySelector("#" + area).classList.remove("normalWidth");
-  document.querySelector("#" + area).classList.add("smallScreenWidth");
+
+function showArea(area) {
+  // fonction qui gére l'affichage des areas
+  console.log(showArea);
+  console.log(area + "displayBlock");
+  document.querySelector("#" + area).classList.remove("displayNone");
+  document.querySelector("#" + area).classList.add("displayBlock");
+  console.log("finshowArea");
 }
 function revealAllSections() {
+  // fonction qui gére permet d'afficher toutes les sections
   console.log("revealAll");
   showSection("aboutMeSection");
   showSection("competencesSection");
@@ -67,50 +128,9 @@ function revealAllSections() {
   showSection("formationsSection");
   showSection("experiencesSection");
 }
-// ----------------------fonctionne
-function adaptAreaSmallScreen() {
-  const mainContainer = document.getElementById("main");
-  mainContainer.style.flexDirection = "column";
-  showArea("modularArea1");
-  showArea("modularArea2");
-  changeSizeAreaToSmall("modularArea1");
-  changeSizeAreaToSmall("modularArea2");
-  showArea("modularAreaSmallScreen");
-  revealAllSections();
-  // ---------------------------enlever la photo qui se trouve dans modularAreaSmallScreen mnt--
-  document.querySelector("#imgIdentiteProfil").classList.remove("displayBlock");
-  document.querySelector("#imgIdentiteProfil").classList.add("displayNone");
-}
-// code ok
-function showArea(area) {
-  console.log(showArea);
-  console.log(area + "displayBlock");
-  document.querySelector("#" + area).classList.remove("displayNone");
-  document.querySelector("#" + area).classList.add("displayBlock");
-  console.log("finshowArea");
-}
-// code ok
-function adaptAreaHideScreen() {
-  const mainContainer = document.getElementById("main");
-  mainContainer.style.flexDirection = "row";
-  console.log(adaptAreaHideScreen);
-  showArea("modularArea1");
-  hideArea("modularAreaSmallScreen");
-  document.querySelector("#modularArea1").classList.remove("smallScreenWidth");
-  document.querySelector("#modularArea1").classList.add("normalWidth");
-  showArea("modularArea2");
-  document.querySelector("#modularArea2").classList.remove("smallScreenWidth");
-  document.querySelector("#modularArea2").classList.add("normalWidth");
-  console.log("finadaptAreaHideScreen");
-  // ---------------------------rajouter la photo car modularAreaSmallScreen enlevee--
-  document.querySelector("#imgIdentiteProfil").classList.remove("displayBlock");
-  document.querySelector("#imgIdentiteProfil").classList.add("displayNone");
-}
-// ------------------desactivation de l'affichage de section ou d'area--------------------
 
-// ------------------------------------------------gestion du responsive______________
-// ______________________fonctionne
 function showSection(section) {
+  // fonction qui gère l'affichage d'une section
   console.log("showSection");
   console.log(section);
   const sectionToDisplay = document.getElementById(section);
@@ -123,11 +143,10 @@ function showSection(section) {
     document.querySelector("#imgIdentiteProfil").classList.add("displayBlock");
   }
 }
-// fonctionne
-function revealSectionOnly(section) {
-  console.log("revealSection");
-  console.log(section);
 
+function revealSectionOnly(section) {
+  // fonction qui permet de cacher toutes les sections et ensuite de montrer la section concernée via l'appel des fonctions concernées
+  console.log(section);
   hideElementOfDiv("modularArea2", "sectionModulable"); // Cache toutes les sections
   // ------------------------------peut etre à enlever-------------------
   document.querySelector("#imgIdentiteProfil").classList.remove("displayBlock");
@@ -135,41 +154,12 @@ function revealSectionOnly(section) {
   // ______________________________________________________________________
   showSection(section);
 }
-
-//   showSection(experiences);
-
-// }
-
-function updateStylesForScreenSize() {
-  const width = window.innerWidth;
-  console.log(`Largeur actuelle de la fenêtre : ${width}`);
-  if (width >= 0 && width <= 1000) {
-    // Les area ici sont le résumé et le contenu container à coté
-    adaptAreaSmallScreen();
-    console.log("Écran petit (moins de 1000px) : adaptation en cours.");
-    // Modifier le padding du header
-  } else {
-    adaptAreaHideScreen();
-    console.log("adaptAreaHideScreen");
-    // buttons.forEach((button) => {
-    //   navBar.querySelector("ul").appendChild(button);
-    // });
-  }
-}
-
-// Appeler la fonction lors du chargement de la page
-
-// Fonction pour déplacer les éléments de navBar dans navBarSpecialSmallScreen
 function ecouteurDeBoutonsPourSideBar() {
+  //Cette fonction permet l'affichage de la sideBar(menu burger ) quand au clique sur le bouton du menu burger
   const btn = document.getElementById("toggle-btn");
   const sideBar = document.getElementById("sideBar");
   const main = document.querySelector("main");
   const content = document.getElementById("content");
-
-  console.log(btn);
-  console.log(sideBar);
-  console.log(main);
-  console.log(content);
   btn.addEventListener("click", () => {
     console.log("clic");
     sideBar.classList.toggle("active");
@@ -184,11 +174,8 @@ function ecouteurDeBoutonsPourSideBar() {
   });
 }
 
-// window.onload = function () {
-//   updateStylesForScreenSize(); // Appel pour appliquer les styles dès le départ
-//   sectionVisibleDeBase();
-// };
 function ecouteurDeBoutonsPourAffichageArea() {
+  //Sur la sideBar petit écran il ne faut montrer uniquement l'area de la section que l'on veut afficher et donc cacher l'autre, Cette section permet de cacher ces area suivants les classes affectées dans le doc html
   document.querySelectorAll("button").forEach((button) => {
     console.log("classbutton");
     button.addEventListener("click", function () {
@@ -213,8 +200,7 @@ function ecouteurDeBoutonsPourAffichageArea() {
       if (button.classList.contains("hideModularArea2")) {
         hideArea("modularArea2");
       }
-      if (button.hasAttribute("MyPersonalClass")) {
-      }
+
       // Si le bouton a la classe 'showModularArea1', on affiche 'modularArea1'
       if (button.classList.contains("showModularArea1")) {
         showArea("modularArea1");
@@ -249,7 +235,8 @@ function ecouteurDeBoutonsPourAffichageArea() {
 
 // --------------------------------Partie ok---------------------------------/
 function ecouteurDeBoutonsPourSections() {
-  console.log("DOM loaded"); // Vérifiez que l'événement est déclenché
+  //fonction qui définit quelle fonction appelée et la section affichée suivant le boutonCliqué
+  console.log("DOM loaded");
 
   // Tableau d'objets associant chaque bouton à sa section correspondante
   const sections = [
@@ -258,24 +245,6 @@ function ecouteurDeBoutonsPourSections() {
     { buttonClassName: "buttonRealisations", sectionId: "realisationsSection" },
     { buttonClassName: "buttonFormations", sectionId: "formationsSection" },
     { buttonClassName: "buttonExperiences", sectionId: "experiencesSection" },
-    { buttonClassName: "buttonAboutMeSideBar", sectionId: "aboutMeSection" },
-
-    {
-      buttonClassName: "buttonCompetencesSideBar",
-      sectionId: "competencesSection",
-    },
-    {
-      buttonClassName: "buttonRealisationsSideBar",
-      sectionId: "realisationsSection",
-    },
-    {
-      buttonClassName: "buttonFormationsSideBar",
-      sectionId: "formationsSection",
-    },
-    {
-      buttonClassName: "buttonExperiencesSideBar",
-      sectionId: "experiencesSection",
-    },
   ];
   console.log("DOM loaded");
   // Boucle pour ajouter l'événement à chaque bouton
@@ -303,21 +272,8 @@ function ecouteurDeBoutonsPourSections() {
   });
 }
 
-// console.log("aboutMeButton:", document.getElementById("buttonAboutMe"));
-// console.log(
-//   "competencesButton:",
-//   document.getElementById("buttonCompetences")
-// );
-// console.log(
-//   "realisationsButton:",
-//   document.getElementById("buttonRealisations")
-// );
-// console.log("formationsButton:", document.getElementById("buttonFormations"));
-// console.log(
-//   "experiencesButton:",
-//   document.getElementById("buttonExperiences")
-// );
 function ecouteurDeBoutonsPourFooter() {
+  //fonction qui permet d'afficher uniquement le footer
   console.log("ecouteurfooter");
   const header = document.querySelector("header");
   header.querySelectorAll("div").forEach((divBtn) => {
@@ -332,6 +288,7 @@ function ecouteurDeBoutonsPourFooter() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  // fonction qui gère l'affichage (sections,area) en fonctions des événements utilisateurs(appui sur boutons nav) et le responsive
   sectionVisibleDeBase();
   updateStylesForScreenSize();
   ecouteurDeBoutonsPourSections();
@@ -340,5 +297,6 @@ document.addEventListener("DOMContentLoaded", function () {
   ecouteurDeBoutonsPourFooter();
 });
 window.addEventListener("resize", function () {
-  updateStylesForScreenSize(); // Appel pour appliquer les styles dès le départ
+  // fonction qui gère  le responsive au redimensionnement
+  updateStylesForScreenSize();
 });

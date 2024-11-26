@@ -58,5 +58,6 @@ Quand un utilisateur clique sur un lien qui pointe vers une ancre (comme #sectio
 /* Utilisez overflow-y: auto au lieu de overflow-y: scroll. Cela ajoutera la barre de défilement uniquement si nécessaire (si le contenu dépasse la hauteur de l'élément). */
 /* Activer le défilement si nécessaire (via JavaScript) */
 
-
+  if (button.hasAttribute("MyPersonalClass")) {
+      }
 

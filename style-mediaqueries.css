@@ -38,15 +38,6 @@
     display: block;
     transition: 0.3s ease;
   }
-  /* #span1{
-
-  }
-  #span2{
-
-  }
-  #span3{
-
-  } */
 
   .toggle-btn.active span:nth-child(1) {
     transform: rotate(45deg);
@@ -103,19 +94,17 @@
     background-color: rgba(26, 44, 86, 0);
   }
   #sideBar.active ul li button {
-    /* Couleur du texte plus claire pour un meilleur contraste */
     font-size: 0.8rem;
-    /* text-transform: uppercase; */
     cursor: pointer;
-    padding: 1px 2px; /* Ajoute un peu de padding pour une meilleure ergonomie */
-    border-radius: 8px; /* Arrondir les coins */
-    transition: all 0.1s ease; /* Transition douce pour les effets */
-    text-transform: uppercase; /* Met en majuscules les éléments pour un look plus moderne */
+    padding: 1px 2px;
+    border-radius: 8px;
+    transition: all 0.1s ease;
+    text-transform: uppercase;
     padding: 5px 5px;
   }
   #sideBar li button:hover {
-    background: #fcfcfb; /* Fond clair lors du survol */
-    color: #1a2c56; /* Texte bleu foncé */
+    background: #fcfcfb;
+    color: #1a2c56;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
   #sideBar.active {
@@ -123,19 +112,10 @@
     right: 0px;
     text-align: center;
     z-index: 100;
+    backdrop-filter: blur(10px);
 
-    /* Appliquer un effet de flou */
-    backdrop-filter: blur(10px); /* Ajuster le rayon du flou */
+    background-color: rgba(26, 44, 86, 0.7);
 
-    /* Appliquer une teinte bleue plus claire et semi-transparente */
-    background-color: rgba(
-      26,
-      44,
-      86,
-      0.7
-    ); /* Une couleur bleue plus claire avec 70% d'opacité */
-
-    /* Optionnel : pour des transitions douces */
     transition: right 0.7s ease, backdrop-filter 0.7s ease,
       background-color 0.7s ease;
   }
@@ -160,9 +140,6 @@
   #navBarSpecialSmallScreen {
     display: block;
   }
-  /* #additionalInfo {
-    display: none;
-  } */
 }
 @media screen and (max-width: 500px) {
   #footerContent {
