@@ -342,11 +342,11 @@ nav ul li button:hover {
 }
 
 .identite {
-  width: 150px;
+  width: 180px;
   height: auto;
 
   object-fit: cover;
-  border-radius: 40%;
+  border-radius: 50%;
   padding-bottom: 3%;
   padding-top: 3%;
 }
@@ -677,3 +677,18 @@ button:focus {
   opacity: 0;
   transform: translateX(400px);
 } */
+.cardContainer2 li {
+  font-weight: 500;
+  text-indent: 5%;
+  font-size: clamp(1rem, 1em, 1.2rem);
+}
+.cardContainer2 #formationsSection li {
+  font-weight: 500;
+  text-indent: 0%;
+  font-size: clamp(1rem, 1em, 1.2rem);
+}
+.cardContainer2 #experiencesSection li {
+  font-weight: 500;
+  text-indent: 0%;
+  font-size: clamp(1rem, 1em, 1.2rem);
+}
